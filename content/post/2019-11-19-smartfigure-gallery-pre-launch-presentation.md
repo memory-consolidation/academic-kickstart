@@ -33,6 +33,28 @@ In the present publish or perish scientific communication system, there is no ro
 
 One can also imagine to be able to seamlessly publish these results in micropublication, if they do not fit in the bigger picture.
 
+
+
+## Usage: upload
+
+We discussed how to motivate users to upload figures, and what could be useful for them. The first element was to be able to work with a different group: share the figure with only your lab for instance. This is a critical features we are already working on, and users will be able to **create their own goups** and share Figures with different groups.
+
+In addition, giving a **timestamp** to the figures could help with recognition of the work (as well as figure filtering and search). Users ask for the possibility to write **mathematical equation**, this could be implemented using a markdown format.
+
+Last but not least, there is a need for a way to **re-use the metadata** entered for a Figure. This might be important for new versions of the same figure, but also as template for new figures.
+
+Irrespective of these feedback, we thought about adding a "help wanted" button, such that the users can notify specific people they are seeking for comments and help. This would be combined with a self-commentary to explain what kind of help is requested.
+
+
+## Usage, read
+
+On the other hand, it is clear for everyone that people will not go regularly on the platform to read/search for new figures. We need to find a way to deliver relevant figures to the users, probably via **email allerts and summaries**. One related function would be to be able to **follow** particular users, groups or figures to get allerts specific for these follows. One could imagine a 
+
+- Getting summary emails (as no one will go every day on the platform)
+- Get a narative !!
+- Filter and sort the SmartFigure to get the relevant one first.
+- Following people, figures or groups
+
 ## Publication of SmartFigure
 
 After discussion, the implementation of these elements will be postponed to a later time point. We will need to think about:
@@ -44,20 +66,6 @@ After discussion, the implementation of these elements will be postponed to a la
 - Combine metadata *
 
 * may be taken up by the texture project.
-
-## Usage, upload
-
-- accessibility to the lab only
-- use mathematical equation in the caption (markdown)
-- timestamp
-- new version, copy metadata in new SmartFigures
-
-## Usage, read
-
-- Getting summary emails (as no one will go every day on the platform)
-- Get a narative !!
-- Filter and sort the SmartFigure to get the relevant one first.
-- Following people, figures or groups
 
 ## Other
 
