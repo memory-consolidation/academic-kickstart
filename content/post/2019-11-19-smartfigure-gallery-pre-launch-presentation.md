@@ -25,7 +25,7 @@ projects: []
 During the SFb1315 retreat, we had a 45 minute presentation of the smartFigure gallery concept and tool. The hands-on session that was planned had to be cut for both timing (1h was initially planned)
 and technical (no stable internet connection) reasons.
 
-We distributed the researchers in three groups, and Julien Colomb, Hanna Sonntag and Thomas Lemberger gave three different but similar presentation of the tool, and gather feedback from the researchers during the last 5-10 minutes of the presentation. Here we report that feedback. At the end, we develop a larger discourse about two specific topics: the research narative and the version control system.
+We distributed the researchers in three groups, and Julien Colomb, Hannah Sonntag and Thomas Lemberger gave three different but similar presentation of the tool, and gather feedback from the researchers during the last 5-10 minutes of the presentation. Here we report that feedback. At the end, we develop a larger discourse about two specific topics: the research narative and the version control system.
 
 # Feedback
 
@@ -40,29 +40,29 @@ One can also imagine to be able to seamlessly publish these results in micropubl
 ## Usage: upload
 
 
-We discussed how to motivate users to upload figures, and what could be useful for them. The first element was to be able to work with a different group: share the figure with only your lab for instance. This is a critical features we are already working on, and users will be able to **create their own goups** and share Figures with different groups.
+We discussed how to motivate users to upload figures, and what could be useful for them. The first element was to be able to work with a different group: share the figure with only your lab for instance. This is a critical feature we are already working on, and users will be able to **create their own goups** and share figures with different groups.
 
 In addition, giving a **timestamp** to the figures could help with recognition of the work (as well as figure filtering and search). Users ask for the possibility to write **mathematical equation**, this could be implemented using a markdown format.
 
-Last but not least, there is a need for a way to **re-use the metadata** entered for a Figure. This might be important for new versions of the same figure, but also as template for new figures.
+Last but not least, there is a need for a way to **re-use the metadata** entered for a figure. This might be important for new versions of the same figure, but also as template for new figures.
 
 
-Irrespective of these feedback, we thought about adding a "help wanted" button, such that the users can notify specific people they are seeking for comments and help. This would be combined with a self-commentary to explain what kind of help is requested.
+Irrespective of the feedback, we thought about adding a "help wanted" button, such that the users can notify specific people they are seeking for comments and help. This would be combined with a self-commentary to explain what kind of help is requested.
 
 
 ## Usage, read
 
 
-On the other hand, it is clear for everyone that people will not go regularly on the platform to read/search for new figures. Getting a good **hierachy and sorting of smartfigures** on the first page of the gallery will probably not be sufficient to make people visit the gallery, and we need to find a way to deliver relevant figures to the users, probably via **email allerts and summaries**. One related function would be to be able to **follow** particular users, groups or figures to get allerts specific for these follows.  
+On the one hand, it is clear for everyone that people will not go regularly on the platform to read/search for new figures. Getting a good **hierachy and sorting of smartfigures** on the first page of the gallery will probably not be sufficient to make people visit the gallery, and we need to find a way to deliver relevant figures to the users, probably via **email allerts and summaries**. One related function would be to be able to **follow** particular users, groups or figures to get allerts specific for these follows.  
 
-On the other hand, people are afraid that the narative of the research get lost in a figure based system and we need to figure out how to bring the narative back. This question is discussed more intensively at the end of the article.
+On the other hand, people are afraid that the narative of the research gets lost in a figure based system and we need to find a way to bring the narative back. This question is discussed more intensively at the end of the article.
 
 
 ## Publication of SmartFigure
 
 While it is not essential to publish SmartFigures per se, it is a goal for both the data management project and the sourcedata team. The implementation of these elements are postponed to a later time point, but we will start thinking and planning these. 
 
-Note that Smartfigures will becoming only panels of larger figures. This means we might implement ways to **automatise the concatenation of different SmartFigures into panels of figures** (maybe in collaboration with the [texture project](https://github.com/substance/texture)). The metadata should also be worked to add (only non-redundent) information into a draft figure caption and a draft material and method section of a paper.
+Note that Smartfigures can be panels of larger figures. This means we might implement ways to **automatise the concatenation of different SmartFigures into panels of figures** (maybe in collaboration with the [texture project](https://github.com/substance/texture)). The metadata should also be worked to add (only non-redundent) information into a draft figure caption and a draft material and method section of a paper.
 
 
 Upon publication, the SmartFigure should be saved in a different open platform, get a doi, be tagged with a license (CC-BY per default, open to other options ?) and be linked with the publication and the figure in it. There are also concerns with new figure version until and beyond that point in time. 
@@ -83,11 +83,11 @@ After discussion, the implementation of these elements will be postponed to a la
 
 ## Other
 
-Users will need a way to reference the SmartFigure, so we need to assign **Permanent identifiers** for that. We will not work with doi to reduce costs and avoid unnecessary doi creation. An internal system should be sufficient. Linked to this problem, we should always put some thought on making a decentralised system for SmartFigures, PID should also link to specific instances of the application.
+Users will need a way to reference the SmartFigure, so we need to assign **permanent identifiers** for that. We will not work with doi to reduce costs and avoid unnecessary doi creation. An internal system should be sufficient. Linked to this problem, we should always put some thought on making a decentralised system for SmartFigures, PID should also link to specific instances of the application.
 
 In terms of commenting, we should speed up slack integration. One way to deal with this might be to use an **e-mail integrated commenting** (like for GitHub comments, where you can reply either online or directly via emails) and add slack-email integration.
 
-We discussed the usage of the platform and the **kind of figures** one would want to upload. While we were mostly thinking people would like to use the platform for data representation figures, we got a lot of different use case, the latter list is probably not exhaustive, we need to think about ways to label the figures differently, if needed.
+We discussed the usage of the platform and the **kind of figures** one would want to upload. While we were mostly thinking people would like to use the platform for data representation figures, we got a lot of different use case, the list is probably not exhaustive, we need to think about ways to label the figures differently, if needed.
 
     - Whiteboards: result of meetings as drawn on the board could be photographed and shared via the SmartFigure
     - visual abstract: these figures represent the take home message of a publication.
@@ -103,7 +103,7 @@ It would be interesting/necessary to be able to **link SmartFigures together**, 
 
 This is a huge concern, as figures alone are not sufficient to grasp the research question and the implication of the results. At the moment, it is tempting to use the caption field for adding background information, something which is not good on the long term. We should therefore urgently **add another text entry field**. 
 
-In addition, we need to think about better ways to implement the narative into the SmartFigure gallery. We are dividing out thought on what information should be delivered, and how this information could be delivered.
+In addition, we need to think about better ways to implement the narative into the SmartFigure gallery. We differencate the problems of what information should be delivered, and how this information could be delivered.
 
 ## The what
 
