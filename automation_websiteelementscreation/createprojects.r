@@ -27,6 +27,8 @@ for (i in c(1: nrow(SFB_proj))){
 
 
 ## Make authors
+## avatar will be in order: default avatar, twitter avatar, manually added avatar in folder
+
 people_sfb <- read_delim(paste0(seafilefolder,"sfb1315_people.csv"),
                          "\t", trim_ws = TRUE, skip = 0, na=character())
 
@@ -59,7 +61,9 @@ for (i in c(1: nrow(update))){
     HERETEXT = a$description
 
     ## add twitter picture
-    download.file(a$profile_image_url,paste0(pdirectory,"/avatar.jpg"), mode ="wb")
+    if (!file.exists(paste0(pdirectory,"/avatar.jpg"))){
+      download.file(a$profile_image_url,paste0(pdirectory,"/avatar.jpg"), mode ="wb")
+    }
   }
 
   ## orcid info integration
