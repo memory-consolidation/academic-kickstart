@@ -39,5 +39,15 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
-
+<DIV class="article-container" markdown="1">
+<DIV class="article-style" markdown="1">
+  
 Fostering collaboration between the different labs working in the CRC1315 is a difficult task. We are working on ways to disseminate information between the different researchers involved. This includes web tools to host the SFB1315 outputs, a SmartFigure gallery and the production of shared research outputs like data, protocols and reagents, using data mangement principles and workflow.
+
+You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+</DIV>
+</DIV>
+
+<br>
+
+<iframe src ="https://sdash.sourcedata.io/dashboard" height=1500px width=90% ></iframe>
