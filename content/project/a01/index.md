@@ -39,5 +39,15 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
-
+<DIV class="article-container" markdown="1">
+<DIV class="article-style" markdown="1">
+  
 Hippocampal sharp wave/ripple complexes (SWRs, Buzsaki, 1989) are short (50-100 ms) episodes of coordinated network activity arising in the hippocampal CA3 area. They may mediate the consolidation of explicit memories, and their disruption interferes with memory (Girardeau et al. 2009). However, the mechanisms governing the occurrence of these episodes remain obscure. To understand the functional role of SWRs in memory consolidation, we will focus on mechanisms that control the rapid onset and termination and the incidence of the sharp-wave (SPW) component. We propose that disinhibition governs the underlying network dynamics and plan to evaluate this hypothesis by developing a computational model that will be analyzed mathematically. The model will be constrained by experiments, in vitro, and its predictions will be tested experimentally.
+
+You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+</DIV>
+</DIV>
+
+<center>
+<iframe src ="https://sdash.sourcedata.io/dashboard" height=1500px width=90% ></iframe>
+</center>

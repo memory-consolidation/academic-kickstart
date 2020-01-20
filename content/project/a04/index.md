@@ -39,7 +39,17 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
-
+<DIV class="article-container" markdown="1">
+<DIV class="article-style" markdown="1">
+  
 The hippocampus and related structures (entorhinal cortex [EC], perirhinal cortex [PRh], etc.) play a vital role in transforming experience into long-term memories that are then stored in the cortex, however the cellular mechanisms that designate single neurons to be part of a memory trace remain unknown. Part of the difficulty in addressing the mechanisms of transformation of short-term to long-term memories is the distributed nature of the resulting "engram" at synapses throughout the cortex.
 
 There is some anatomical evidence to suggest that connections from the hippocampus via the EC and PR terminate predominantly in the upper layers of the vertebral cortex (Witter and Groenewegen, 1986). Layer 1 (L1) of the neocortex is also the locus of horizontal long-range axon fibers from many cortical regions carrying feedback information vital for cognitive processes (Felleman and Van Essen, 1991; Gilbert and Sigman, 2007; Larkum, 2013a). These two facts suggest that L1 acts as a nexus for long-range fibers carrying contextual Information and the signals for the long-term storage of this information. Finally, apart from a handful of local interneurons, L1 is dominated by the distal tuft dendrites of pyramidal neurons that are highly electrogenic (Larkum et al., 2009; Palmer et al., 2014). We therefore hypothesize that activity in projections from the parahippocampus leads to consolidation of memory at specific neuronal ensembles via synapses in L1 of the cortex, possibly influencing dendritic electrogenesis.
+
+You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+</DIV>
+</DIV>
+
+<center>
+<iframe src ="https://sdash.sourcedata.io/dashboard" height=1500px width=90% ></iframe>
+</center>

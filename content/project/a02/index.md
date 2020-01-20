@@ -39,5 +39,15 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
-
+<DIV class="article-container" markdown="1">
+<DIV class="article-style" markdown="1">
+  
 Memory consolidation requires fast network oscillations and involves the transfer of information from the hippocampus via the subiculum to various cortical targets. Subicular pyramidal cells exhibit regular or burst firing electrophysiological profiles and project to different target areas. Using whole-cell patch-clamp recordings in awake mice we demonstrated that during sharp wave-ripple complexes (SWRs), bursting cells are activated whereas regular firing cells are silenced, implicating preferential input to target areas of bursting cells. Furthermore, with multiple recordings in vitro we have identified the principles that underlie the differential recruitment during sharp wave ripples: regular firing cells are more synaptically inhibited, while the bursting neurons receive excitatory input to a much greater extent. Our combined analyses allow us to conclude that the subiculum enables the separation of two parallel streams of information. The experiments outlined in this proposal are designed to answer the numerous questions that arise from the above observations: which cortical areas and cell types are targeted by subicular cells? Do SWRs propagate into these cortical areas? Is this propagation functionally relevant for memory consolidation? We will use physiological techniques - both in vitro and in vivo - in combination with optogenetics to investigate the functional connectivity and answer the above questions.
+
+You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+</DIV>
+</DIV>
+
+<center>
+<iframe src ="https://sdash.sourcedata.io/dashboard" height=1500px width=90% ></iframe>
+</center>
