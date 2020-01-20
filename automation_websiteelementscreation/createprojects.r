@@ -28,7 +28,7 @@ for (i in c(1: nrow(SFB_proj))){
   templatenew =sub ("THISISTHETITLE", SFB_proj$Title[i],templatenew)
   templatenew =sub ("heretheautors", as.character(SFB_proj$People_linked[i]),templatenew)
   templatenew =sub ("IMAGECAPTION", SFB_proj$featured_image_caption[i],templatenew)
-  MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard" height=1500px width=90% ></iframe>')
+  MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>')
   templatenew =sub ("maintexthere", SFB_proj$description [i],templatenew )
   templatenew =sub ("SFgallerylink", MAINTEXT2,templatenew )
 
