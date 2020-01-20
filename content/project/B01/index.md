@@ -39,5 +39,15 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
-
+<DIV class="article-container" markdown="1">
+<DIV class="article-style" markdown="1">
+  
 The hippocampus plays a critical role in the acquisition and consolidation of explicit memory. The dependence of declarative memories on the hippocampus decays over a time scale of weeks to years, and memories can eventually become independent of the hippocampus. This property has sparked the hypothesis of systems memory consolidation, which holds that the hippocampus guides a redistribution of memory engrams from the hippocampus towards neocortical networks over time. Although this process seems to be related to resting and/or sleep states and probably involves characteristic activity patterns that replay recent experiences (Girardeau et al., 2009; Diekelmann and Born, 2010), the synaptic and network plasticity mechanisms that underlie this memory transfer are unclear. The aim of the project presented here is to develop and test a mechanistic theory that could provide a neuronal basis for systems memory consolidation.
+
+You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+</DIV>
+</DIV>
+
+<center>
+<iframe src ="https://sdash.sourcedata.io/dashboard" height=800px width=90% ></iframe>
+</center>

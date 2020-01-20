@@ -48,6 +48,6 @@ You can access the latest unpublished results for this project on the SFB1315 pr
 </DIV>
 </DIV>
 
-<br>
-
-<iframe src ="https://sdash.sourcedata.io/dashboard" height=1500px width=90% ></iframe>
+<center>
+<iframe src ="https://sdash.sourcedata.io/dashboard" height=800px width=90% ></iframe>
+</center>
