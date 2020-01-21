@@ -5,8 +5,11 @@ library (dplyr)
 library (magick)
 library (data.table)
 
+options(download.file.method="libcurl")
 
 
+
+###----------------------------------PROJECTS--PROJECTS--PROJECTS--
 ##get folder with the information sheets
 seafilefolder= "C:/Users/juliencolomb/Seafile/SFB1315info/"
 
@@ -42,7 +45,7 @@ for (i in c(1: nrow(SFB_proj))){
 
 
 
-##---------------------------------------- Make authors (only ones with update and code set)
+###----------------------------------authors--authors--authors-- Make authors (only ones with update and code set)
 ## avatar will be in order: default avatar, twitter avatar, manually added avatar in folder
 
 
@@ -77,8 +80,10 @@ for (i in c(1: nrow(update))){
 
     ## add twitter picture
     if (!file.exists(paste0(pdirectory,"/avatar.jpg"))){
-      download.file(a$profile_image_url,paste0(pdirectory,"/avatar.jpg"), mode ="wb")
+
+      download.file(sub("_normal.", ".",a$profile_image_url),paste0(pdirectory,"/avatar.jpg"), mode ="wb")
     }
+
   }
 
   ## orcid info integration

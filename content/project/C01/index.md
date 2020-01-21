@@ -53,9 +53,5 @@ You can access the latest unpublished results for this project on the SFB1315 pr
 </DIV>
 
 <center>
-<<<<<<< HEAD
-<iframe src ="https://sdash.sourcedata.io/dashboard" height=800px width=90% ></iframe>
-=======
-<iframe src ="https://sdash.sourcedata.io/dashboard" height=1500px width=90% ></iframe>
->>>>>>> b45a32b044cb1138fe3dc7b7991c0d038733098a
+<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>
 </center>
