@@ -8,8 +8,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "Result of the month: 2019-11: A07-A08"
-subtitle = "Network-Specific Synchronization of Electrical Slow-Wave Oscillations Regulates Sleep Drive in Drosophila"
+title = "Result of the month: 2019-12: B01"
+subtitle = "From episodic to semantic memory: A computational model"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -52,12 +52,12 @@ subtitle = "Network-Specific Synchronization of Electrical Slow-Wave Oscillation
 <table id="Main table" style="background-color:rgba(0, 0, 25, 0);border-collapse: collapse;">
 <tr ></tr>
   <tr >
-    <td width = "50%"><img src = "RG/sleepfly.png",  width= "100%" ></td>
-    <td>Slow-wave rhythms characteristic of deep sleep can be found across various brain regions in vertebrates. Here, we discover compound delta oscillations in the sleep-regulating R5 network of Drosophila. We find that the power of these slow-wave oscillations increases with sleep need. Optical multi-unit voltage recordings reveal that single R5 neurons get synchronized by activating circadian input pathways. We show that this synchronization depends on NMDA receptor (NMDAR) coincidence detector function. Genetically targeting the coincidence detector function of NMDARs in R5, abolished network-specific compound slow-wave oscillations. It also disrupted sleep and facilitated light-induced wakening, establishing a role for slow-wave oscillations in regulating sleep and sensory gating. We therefore propose that the synchronization-based increase in oscillatory power likely represents an evolutionarily conserved, potentially “optimal,” strategy for constructing sleep-regulating sensory gates.</td> 
+    <td width = "50%"><img src = "RG/From_episodic_to_semantic_m.png",  width= "100%" ></td>
+    <td>Learning of semantic generalizations from specific experiences. Episodic memories are modelled as random activation patterns with shared statistical regularities. If the environment is simple (left), the regularities can be extracted in both, the multisynaptic (blue line) and shortcut pathway (red lines), and neural replay (dashed line) enhances consolidation speed into the shortcut pathway compared to random reactivations (solid line). If the environment is too complex (right), the multisynaptic pathway cannot learn to generalize and neural replay is necessary for consolidation into the shortcut pathway.</td> 
     
   </tr>
   </table>
   
 
 
-Open access publication: [https://doi.org/10.1016/j.cub.2019.08.070](https://doi.org/10.1016/j.cub.2019.08.070)
+Open access proceedings: [https://ccneuro.org/2019/proceedings/0000207.pdf](https://ccneuro.org/2019/proceedings/0000207.pdf)
