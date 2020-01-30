@@ -4,10 +4,10 @@ library (readr)
 library (dplyr)
 library (data.table)
 
-# variables
-heightfeature = 230
-border =3
-widthfeature = 450
+# variables, deprecated, we now use a function see loop below
+# heightfeature = 300
+# border =3
+# widthfeature = 200
 
 
 
@@ -68,7 +68,9 @@ featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230
 for (theproject in substring (SFB_proj$hash,9)) {
   print (theproject)
   theproject %>%
-    featureimage(border = 2) %>%
+    featureimage(heightfeature = 250,
+                 border =3,
+                 widthfeature = 300 ) %>%
     image_write(path = paste0("content/project/",theproject,"/featured.png"), format = "png")
 }
 
