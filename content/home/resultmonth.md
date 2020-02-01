@@ -8,8 +8,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "Result of the month: 2019-12: B01"
-subtitle = "From episodic to semantic memory: A computational model"
+title = "Result of the month: 2020-01: B04"
+subtitle = "Inhibition within a premotor circuit controls the timing of vocal turn-taking in zebra finches"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -52,12 +52,15 @@ subtitle = "From episodic to semantic memory: A computational model"
 <table id="Main table" style="background-color:rgba(0, 0, 25, 0);border-collapse: collapse;">
 <tr ></tr>
   <tr >
-    <td width = "50%"><img src = "RG/From_episodic_to_semantic_m.png",  width= "100%" ></td>
-    <td>Learning of semantic generalizations from specific experiences. Episodic memories are modelled as random activation patterns with shared statistical regularities. If the environment is simple (left), the regularities can be extracted in both, the multisynaptic (blue line) and shortcut pathway (red lines), and neural replay (dashed line) enhances consolidation speed into the shortcut pathway compared to random reactivations (solid line). If the environment is too complex (right), the multisynaptic pathway cannot learn to generalize and neural replay is necessary for consolidation into the shortcut pathway.</td> 
+    <td width = "50%"><img src = "RG/202001_b04.jpg",  width= "50%" ></td>
+    <td>
+    Inhibition within HVC (a cortical premotor nucleus) regulates call timing in zebra finches. a Call responses (blue bars) to call playbacks (gray) during bilateral infusion of saline in HVC (control). b Accelerated call responses (orange bars) during infusion of 0.01 mM gabazine. c Response probability distributions for control (blue) and gabazine (orange) conditions in (a, b).
+     These results support a working model in which premotor inhibition regulates context-dependent timing of vocalizations and enables the precise interleaving of vocal signals during turn-taking.
+    </td> 
     
   </tr>
   </table>
   
 
 
-Open access proceedings: [https://ccneuro.org/2019/proceedings/0000207.pdf](https://ccneuro.org/2019/proceedings/0000207.pdf)
+Open access nature communication paper: [https://doi.org/10.1038/s41467-019-13938-0](https://doi.org/10.1038/s41467-019-13938-0)
