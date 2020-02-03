@@ -70,7 +70,7 @@ for (theproject in substring (SFB_proj$hash,9)) {
   theproject %>%
     featureimage(heightfeature = 250,
                  border =3,
-                 widthfeature = 300 ) %>%
+                 widthfeature = 250 ) %>%
     image_write(path = paste0("content/project/",theproject,"/featured.png"), format = "png")
 }
 
