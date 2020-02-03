@@ -7,7 +7,7 @@ weight = 1  # Order that this section will appear.
 
 # Slide interval.
 # Use `false` to disable animation or enter a time in ms, e.g. `5000` (5s).
-interval = false
+interval = 5000
 
 # Slide height (optional).
 # E.g. `500px` for 500 pixels or `calc(100vh - 70px)` for full screen.
@@ -44,7 +44,7 @@ height = ""
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
   
   cta_label = "Login to our Gin instance"
-  cta_url = "https://gin.g-node.org/user/login"
+  cta_url = "/data_gin/"
   cta_icon_pack = "fas"
   cta_icon = "sign-in-alt"
   
