@@ -12,6 +12,7 @@ options(download.file.method="libcurl")
 ###----------------------------------PROJECTS--PROJECTS--PROJECTS--
 ##get folder with the information sheets
 seafilefolder= "C:/Users/juliencolomb/Seafile/SFB1315info/"
+seafilefolder= "/Users/colombj/Documents/Seafile/SFB1315info/"
 
 ## read data
 SFB_proj <- read_delim(paste0(seafilefolder,"sfb1315_project-people.csv"),
@@ -19,6 +20,14 @@ SFB_proj <- read_delim(paste0(seafilefolder,"sfb1315_project-people.csv"),
 
 people_sfb <- read_delim(paste0(seafilefolder,"sfb1315_people.csv"),
                          "\t", trim_ws = TRUE, skip = 0, na=character())
+
+## used to create people code
+# people_sfb$people_code2 = NA
+# a=people_sfb$Name %>% strsplit( " ")
+# for (i in c(1: nrow(people_sfb))){
+#   people_sfb$people_code2 [i]= tolower(paste0(a[[i]][length(a[[i]])-1], "-", a[[i]][length(a[[i]])]))
+# }
+# View(people_sfb)
 
 ##---------------------------------------- make projects
 
@@ -29,8 +38,16 @@ template = readLines("automation_websiteelementscreation/projects_template.md")
 for (i in c(1: nrow(SFB_proj))){
   templatenew = template
   templatenew =sub ("THISISTHETITLE", SFB_proj$Title[i],templatenew)
-  templatenew =sub ("heretheautors", as.character(SFB_proj$People_linked[i]),templatenew)
+  ### this needs to be changed:
+  peoproj =people_sfb %>% filter(grepl (substring(SFB_proj$hash[i],9), project)) %>%
+    select(people_code)%>%
+    pull()
+
+
+
+  templatenew =sub ("heretheautors", paste0( '"',paste0(peoproj, collapse = '","'), '"'),templatenew)
   templatenew =sub ("IMAGECAPTION", SFB_proj$featured_image_caption[i],templatenew)
+  #### this will be modified once the RG gets the right function (parametrised url)
   MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>')
   templatenew =sub ("maintexthere", SFB_proj$description [i],templatenew )
   templatenew =sub ("SFgallerylink", MAINTEXT2,templatenew )
@@ -196,3 +213,13 @@ for (theproject in substring (SFB_proj$hash,9)) {
 # people_sfb$project
 # write_delim(people_sfb,paste0(seafilefolder,"sfb1315_people2.csv"),
 #             delim="\t")
+
+i=1
+substring(SFB_proj$hash [i],9)
+
+peoproj =people_sfb %>% filter(grepl (substring(SFB_proj$hash [i],9), project)) %>%
+  select(people_code)%>%
+  pull()
+
+paste0( '"',paste0(peoproj, collapse = '","'), '"')
+

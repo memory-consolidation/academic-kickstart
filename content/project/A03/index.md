@@ -3,7 +3,7 @@
 
 title: "A03: Formation and consolidation of social memories in the ventral hippocampus"
 summary: ""
-authors: []
+authors: ["wei-tang","michael-brecht"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

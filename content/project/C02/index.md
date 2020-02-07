@@ -3,7 +3,7 @@
 
 title: "C02: Experimental behavior technologies and animal training"
 summary: ""
-authors: []
+authors: ["alexej-schatz","katharina-stumpenhost","york-winter","marina-mikhaylova"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

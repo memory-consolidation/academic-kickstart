@@ -3,7 +3,7 @@
 
 title: "A05: Target-specific synaptic and network mechanisms of memory consolidation"
 summary: ""
-authors: []
+authors: ["caroline-berlage","ian-stewart","svenja-steinfelder","mikkel-vestergaard","clarissa-whitmire","benjamin-judkewitz","james-poulet"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

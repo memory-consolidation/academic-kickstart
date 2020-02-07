@@ -3,7 +3,7 @@
 
 title: "A01: Control of memory engram-related activity in the hippocampus: focus on disinhibition"
 summary: ""
-authors: ["richard-kempter","dietmar-schmitz","anne-voigt","roberta-evangelista"]
+authors: ["roberta-evangelista","anne-voigt","gaspar-cano","eric-reifenstein","nikolaus-maier","dietmar-schmitz","richard-kempter"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

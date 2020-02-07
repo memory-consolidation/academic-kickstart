@@ -3,7 +3,7 @@
 
 title: "Z: data management and collaboration"
 summary: ""
-authors: ["admin","matthew-larkum"]
+authors: ["matthew-larkum","admin"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

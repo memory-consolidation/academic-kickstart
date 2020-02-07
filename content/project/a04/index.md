@@ -3,7 +3,7 @@
 
 title: "A04: Memory formation and consolidation in defined neurons of the cortex"
 summary: ""
-authors: ["jiyun-shin","naoya-takahashi","matthew-larkum"]
+authors: ["jiyun-shin","naoya-takahashi","matthew-larkum","marina-mikhaylova"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00
