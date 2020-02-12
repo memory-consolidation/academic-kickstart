@@ -8,8 +8,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "Result of the month: 2019-12: B01"
-subtitle = "From episodic to semantic memory: A computational model"
+title = "Result of the month: 2020-02: B04"
+subtitle = "Inhibition within a premotor circuit controls the timing of vocal turn-taking in zebra finches"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -52,12 +52,14 @@ subtitle = "From episodic to semantic memory: A computational model"
 <table id="Main table" style="background-color:rgba(0, 0, 25, 0);border-collapse: collapse;">
 <tr ></tr>
   <tr >
-    <td width = "50%"><img src = "RG/From_episodic_to_semantic_m.png",  width= "100%" ></td>
-    <td>Learning of semantic generalizations from specific experiences. Episodic memories are modelled as random activation patterns with shared statistical regularities. If the environment is simple (left), the regularities can be extracted in both, the multisynaptic (blue line) and shortcut pathway (red lines), and neural replay (dashed line) enhances consolidation speed into the shortcut pathway compared to random reactivations (solid line). If the environment is too complex (right), the multisynaptic pathway cannot learn to generalize and neural replay is necessary for consolidation into the shortcut pathway.</td> 
+    <td width = "50%"><img src = "RG/benichov_vallentin.jpg",  width= "100%" ></td>
+    <td>Zebra finches respond to calls with a stereotyped latency. 
+    <br>
+    a) An example bird presented with call playbacks at a rate of one per second (grey) responds with calls (blue). <br> b) The zebra finch vocal-motor pathway. The premotor nucleus HVC receives auditory inputs and drives the timing of vocalizations via the descending vocal-motor pathway (blue). <br> c) Effects of bilateral disinhibition of HVC on call response timing. After blocking inhibitory transmission in HVC with bilateral infusion of GABAA receptor antagonist, gabazine, call response latencies are significantly shorter (orange) and more likely to overlap with call playbacks than under control conditions (blue, from (a)). <br> d) Call related activity of HVC neurons. Example traces of four intracellular recordings from HVC neurons aligned to onset of call production. From top to bottom: the recorded traces were obtained from an interneuron (red), two different premotor neurons (green & blue), and a premotor neuron recorded after local application of gabazine (orange). Interneurons increased their firing rate prior to calls, while premotor neurons fired temporally precise bursts around call onset, but were silent when birds are not vocalizing. </td> 
     
   </tr>
   </table>
   
 
 
-Open access proceedings: [https://ccneuro.org/2019/proceedings/0000207.pdf](https://ccneuro.org/2019/proceedings/0000207.pdf)
+Open access nature communication paper: [https://doi.org/10.1038/s41467-019-13938-0](https://doi.org/10.1038/s41467-019-13938-0)
