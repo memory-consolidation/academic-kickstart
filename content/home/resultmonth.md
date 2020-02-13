@@ -8,7 +8,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "Result of the month: 2020-02: B04"
+title = "Result of the month: 2020-02: A06"
 subtitle = "Inhibition within a premotor circuit controls the timing of vocal turn-taking in zebra finches"
 
 [design]
