@@ -43,7 +43,7 @@ for (i in c(1: nrow(SFB_proj))){
     select(people_code)%>%
     pull()
 
-
+  print(paste0( '"',paste0(peoproj, collapse = '","'), '"'))
 
   templatenew =sub ("heretheautors", paste0( '"',paste0(peoproj, collapse = '","'), '"'),templatenew)
   templatenew =sub ("IMAGECAPTION", SFB_proj$featured_image_caption[i],templatenew)
