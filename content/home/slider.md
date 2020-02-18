@@ -44,7 +44,7 @@ height = ""
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
   
   cta_label = "Login to our Gin instance"
-  cta_url = "https://gin.g-node.org/user/login"
+  cta_url = "/data_gin/"
   cta_icon_pack = "fas"
   cta_icon = "sign-in-alt"
   
