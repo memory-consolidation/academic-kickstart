@@ -33,7 +33,7 @@ and https://blogs.hu-berlin.de/wir_bewegen_buecher/2017/10/27/orcid/. In particu
 Go to https://orcid.org, click the register/sign-in button. If you do not have an account, register one.
 
 ```
-Putative final step: Delegate in one minute
+Putative final step: Delegate all other steps in one minute
 
 Make someone responsible for adding information in your orcid profile: 
 - Sign into your orcid page https://orcid.org/my-orcid
@@ -44,9 +44,12 @@ Make someone responsible for adding information in your orcid profile:
 
 ## Step 2: add SFB1315 funding information
 
-- add the SFB1315 in the funding 
+In order for me to find your orcid id without having to ask you, we will tag them with SFB funding information.
+Look at first minute of this video to see how: 
 
 <iframe src="https://widgets.figshare.com/articles/11848407/embed?show_title=1" width="568" height="426" allowfullscreen="true" frameborder="0"></iframe>
+
+
 
 ## Further steps to come!
 
