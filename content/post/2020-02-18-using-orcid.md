@@ -44,7 +44,9 @@ Make someone responsible for adding information in your orcid profile:
 
 ## Step 2: add SFB1315 funding information
 
-- add the SFB1315 in the funding (see video: https://figshare.com/articles/add_allinfo_small_mov/11848407)
+- add the SFB1315 in the funding 
+
+<iframe src="https://widgets.figshare.com/articles/11848407/embed?show_title=1" width="568" height="426" allowfullscreen="true" frameborder="0"></iframe>
 
 ## Further steps to come!
 
