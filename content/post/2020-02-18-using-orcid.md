@@ -30,14 +30,17 @@ and https://blogs.hu-berlin.de/wir_bewegen_buecher/2017/10/27/orcid/. In particu
 
 ## Step 1: Register in 35 seconds
 
-Go to www.orcid.org, click the register/sign-in button. If you do not have an account, register one.
+Go to https://orcid.org, click the register/sign-in button. If you do not have an account, register one.
 
-## Putative final step: Delegate in one minute
+```
+Putative final step: Delegate in one minute
 
 Make someone responsible for adding information in your orcid profile: 
 - Sign into your orcid page https://orcid.org/my-orcid
 - In the upper-right corner, click your name, and choose `account settings` in the menu
 - use the `trusted individual` box to give rights to update your profile to somebody you trust. You can revoke this right anytime.
+
+```
 
 ## Step 2: add SFB1315 funding information
 
@@ -45,7 +48,7 @@ Make someone responsible for adding information in your orcid profile:
 
 ## Further steps to come!
 
-<!--- 
+<!--
 3b. ADD INFO (5-120 min)
 (once you signed in, we can add more information, be sure to set the visibility to "public.
 
@@ -72,5 +75,4 @@ Optional cool stuff you can do with your orcid
 - check your impact story badges
 - create a wikidata scholia page (including co-author graphical representation)
 - ...
-
----!>
+-->
