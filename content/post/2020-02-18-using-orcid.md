@@ -37,8 +37,11 @@ Putative final step: Delegate all other steps in one minute
 
 Make someone responsible for adding information in your orcid profile: 
 - Sign into your orcid page https://orcid.org/my-orcid
-- In the upper-right corner, click your name, and choose `account settings` in the menu
-- use the `trusted individual` box to give rights to update your profile to somebody you trust. You can revoke this right anytime.
+- In the upper-right corner, click your name,
+    and choose `account settings` in the menu
+- use the `trusted individual` box to
+    give rights to update your profile to somebody you trust.
+    You can revoke this right anytime.
 
 ```
 
