@@ -43,28 +43,30 @@ Reach out to people you want to work with on specific project, or colleagues you
 ## Reading papers
 
 Let's start with the obvious: catch up with the literature can be done anywhere. If you need to access pay-walled papers, there is different ways:
+
 - Get a VPN access to your university network (https://www.cms.hu-berlin.de/de/dl/netze/vpn/openvpn)
-- use unpaywall on firefox to get a link to a legal copy of the article (if one exists)
-- send a email/slack message to the authors or someone who knows has access
+- use `unpaywall` on firefox to get a link to a legal copy of the article while browsing(if one exists)
+- send a email/slack message to the authors or to someone who has access
 - use a pirate website to get a copy illegally (https://en.wikipedia.org/wiki/Sci-Hub)
 
-Do not forget to use a reference manager to gather article metadata at download, my favorite open source one is zotero: https://www.zotero.org (This will greatly facilitate your work when using these paper as reference in a future paper). You can add notes and tags into your reference manager directly.
+Do not forget to **use a reference manager** to gather article metadata during download, my favorite open source one is zotero: https://www.zotero.org (This will greatly facilitate your work when using these paper as reference in a future paper). You can add notes and tags into your reference manager directly.
 
-Since you have quite some time free, you may try to make your remarks about the paper public. It can be a blog-post to share with your colleagues, or a more formal post-publication peer review (you can use https://www.scienceopen.com for that), or a comment or email if the article is still in a preprint stage. 
-## Writing (and documenting experiments)
+Since you have quite some time free, you may try to make your remarks about the paper public. It can be a blog-post to share with your colleagues, or a more formal post-publication peer review (you can use https://www.scienceopen.com for that), or a comment or an email to the authors if the article is still in a preprint stage. 
 
-You can start writing your next paper, even if you do not have much results yet. You can use the time to collect information you will need for the material and method section, write down your protocols, be sure to have all information needed to describe your material and animals. The Arrive checklist can help you: https://www.nc3rs.org.uk/sites/default/files/documents/Guidelines/NC3Rs%20ARRIVE%20Guidelines%20Checklist%20%28fillable%29.pdf
+## Writing papers (and documenting experiments)
 
-For genetic information, gather or request a MGI number for your animal strain: http://www.informatics.jax.org/home/strain (if it was already published, sometimes it is easier to search for the publication there to find the strain).
+You can start writing your next paper, even if you do not have much results yet. You can use the time to collect information you will need for the material and method section: write down your protocols, be sure to have all information needed to describe your material and animals. The Arrive checklist can help you: https://www.nc3rs.org.uk/sites/default/files/documents/Guidelines/NC3Rs%20ARRIVE%20Guidelines%20Checklist%20%28fillable%29.pdf
 
-For material (plasmid, chemicals,..), check whether there is a RRID number (https://scicrunch.org/resources), or look for another way to identify the material.
+For genetic information, gather or request a MGI number for your animal strain: http://www.informatics.jax.org/home/strain (if it was already published, sometimes it is easier to search for the publication fist, and access the strain afterwards).
+
+For material (plasmids, chemicals,..), check whether there is a RRID number (https://scicrunch.org/resources), or look for another way to uniquely identify the material. You may ask a colleague to check if the information is sufficient to reproduce the experiment.
 
 
 ## Analyzing (and organizing) your data
 
-If you can not collect new data, you can still work on your data analysis. For this you will need your data (at least some of it). You can either get it on a external hard disk, or online on GIN http://www.g-node.org. If you go for the latter solution, you may use a template repository. Click `+ > Import repository` and use https://gin.g-node.org/larkumlab/Main_template as the clone address. Upload then data via the browser (drag and drop folders). 
+If you can not collect new data, you can still work on your data analysis. For this you will need your data (at least some of it). You can either get it on a external hard disk, or online on GIN http://www.g-node.org. If you go for the latter solution, you may use a template repository. Click `+ > Import repository` and use https://gin.g-node.org/larkumlab/Main_template as the clone address. Upload then data via the browser (drag and drop folders). The data curator team is preparing some teaching material to better introduce GIN to the SFB.
 
-You may use the time to investigate new ways to analyse your data, learning a programming language like R and python, and/or testing new algorithms and analysis. It might help to write readme files to describe the data-sets, maybe reorganize the files to facilitate the analysis (as well as adding metadata to  make the data re-usable in different contexts).
+You may also use the time to investigate new ways to analyse your data, learning a programming language like R and python, and/or testing new algorithms and analysis. It might help to write readme files to describe the data-sets, maybe reorganize the files to facilitate the analysis (as well as adding metadata to  make the data re-usable in different contexts).
 
 **Please reach out to the data curator if you need help to organise your data !**
 
@@ -81,7 +83,7 @@ If you do not have one, you might find a side project not involving animal exper
 
 Last but not least, you can spend time to learn new skills. There are a lot of free offers around, let it be programming, open source software, time management, project management, group moderation, open science topics, scientific writing,...
 
-Some platforms to search:
+Some platforms to search for free courses:
 
 - https://www.open.edu/
 - https://www.edx.org/
