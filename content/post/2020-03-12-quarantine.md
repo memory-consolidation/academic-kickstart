@@ -68,10 +68,10 @@ Please reach out to the data curator if you need help to organise your data !
 
 If you do not have one, you might find a side project not involving animal experiments. Maybe you can access existing data (from your past experiments, from a lab mate or from an open data repository) and work on new ways to analyse it ?
 
-``` 
-In 2011, my test device broke and I could not do any experiments for 8 months. I had to start a new project, and spent a lot of time working on the analysis of trajectories that had been started in the lab. It ended up being a great learning experience (I am now a decent R programmer), and got me 3 publications, two as first author.
+ 
+>In 2011, my test device broke and I could not do any experiments for 8 months. I had to start a new project, and spent a lot of time working on the analysis of trajectories that had been started in the lab. It ended up being a great learning experience (I am now a decent R programmer), and got me 3 publications, two as first author.
 
-```
+
 
 # Learn new skills
 
