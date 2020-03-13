@@ -57,7 +57,7 @@ You can start writing your next paper, even if you do not have much results yet.
 
 For genetic information, gather or request a MGI number for your animal strain: http://www.informatics.jax.org/home/strain (if it was already published, sometimes it is easier to search for the publication there to find the strain).
 
-For material (plasmid, chemicals,..), check whether there is a RRID number, or look for another way to identify the material.
+For material (plasmid, chemicals,..), check whether there is a RRID number (https://scicrunch.org/resources), or look for another way to identify the material.
 
 
 ## Analyzing (and organizing) your data
@@ -66,9 +66,7 @@ If you can not collect new data, you can still work on your data analysis. For t
 
 You may use the time to investigate new ways to analyse your data, learning a programming language like R and python, and/or testing new algorithms and analysis. It might help to write readme files to describe the data-sets, maybe reorganize the files to facilitate the analysis (as well as adding metadata to  make the data re-usable in different contexts).
 
-```
-Please reach out to the data curator if you need help to organise your data !
-```
+**Please reach out to the data curator if you need help to organise your data !**
 
 ## Computational project
 
@@ -83,7 +81,7 @@ If you do not have one, you might find a side project not involving animal exper
 
 Last but not least, you can spend time to learn new skills. There are a lot of free offers around, let it be programming, open source software, time management, project management, group moderation, open science topics, scientific writing,...
 
-For example (please share your experience with your lab mates on slack or via emails), apart from your usual web search engine, you can search for instance on these platforms:
+Some platforms to search:
 
 - https://www.open.edu/
 - https://www.edx.org/
