@@ -18,7 +18,7 @@ image:
 projects: []
 ---
 
-What does a researcher when he is asked to stay home, unable to collect new data? I will collect here some thought and experience gathered over the years. 
+What does a researcher when he is asked to stay home, unable to collect new data? I will collect here some thought and experience gathered over the years. After giving links to good source of advice for home working in general, I will give some information specific for researchers.
 
 This is a work in progress, please give comments and feedback here https://github.com/smartfigures-dar/feedback_repo/issues/new?assignees=jcolomb&labels=website&template=website-issue.md&title=
 
@@ -26,13 +26,22 @@ This is a work in progress, please give comments and feedback here https://githu
 
 # A desk at home!
 
-## Prepare your working environment
+Working from home is a bit different from working in the lab. I would encourage anyone of you to take 5 minutes to read advices form experts here: 
 
-If you can, get a room, desk, chair and storage place dedicated to work. The longer the time spent in home office, the more important it become to get a nice, organised work place in your home. Invest some time to create that environment.
+- https://www.jisc.ac.uk/blog/dont-forget-the-human-side-of-homeworking-11-mar-2020
+- https://creativecommons.org/2020/03/13/advice-on-working-from-home/
 
-## Keep social contacts
 
-Use your phone and video calls to keep yourself in social contact with other lab members and friends. emails do not count.
+
+In summary: 
+
+- Prepare your working place (desk, chair)
+- Keep your normal workday (morning) routine (including breaks)
+- Keep social contacts
+- Be flexible
+ 
+> structure your day, welcome the interruptions and keep in touch.  I often break my day with a 'hi there' to a colleague, just to touch base. 
+> ~Scott connor
 
 # Possible tasks and how to prepare them
 
