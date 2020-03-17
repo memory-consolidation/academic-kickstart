@@ -49,6 +49,14 @@ In summary:
 
 Reach out to people you want to work with on specific project, or colleagues you have not met for some time, ask for updates, give yours. Your social network is part of your academic success, give some of your time everyday to strengthen these bonds.
 
+## Online presence
+
+There are different ways to work on one's reputation online, but the main possibilities are getting an updated orcid profile, being active on twitter, and a personal blog. I do advice against spending time on google scholar, academia or researchgate, which have closed data scheme and opaque business models. You can also think about using instagram and youtube, but that requires more investment (see https://www.helmholtz-hzi.de/en/news-events/stories/online-visibility-from-analogue-researcher-to-online-scientist/)
+
+- https://orcid.org : get an unique identifiers that you can use in your publication (papers, data-sets, software,...), that will be easier for anyone to know it is you and not someone with a similar name. In addition, the platform allows you to pull and add different information about yourself (publications, funding information, affiliation, education certificates,..), this information can the be used by other software (wikidata, impactstory, your university library,..) to build personal pages and department statistics. For instance, you can then get a complete scienceopen profile, as your orcid information can be pulled and updated automatically.
+- https://twitter.com : give small updates on your work, connect with peers, comment others entries, stay up to date with news,... Be careful not to become addicted and reserve some time for twitter, the same way you should save time for your emails (i.e. do not check them outside of this reserved time)
+- Blog platforms: While using wordpress.com is the easiest way to start, I would encourage you to use a static web generator and learn how to use [blogdown](https://bookdown.org/yihui/blogdown/index.html) (this website was created using that technology). It will allow you to reuse orcid information, keep a total control over the website, and create blog-posts including statistical analysis (written in R or python, and that will be updated with new/more data, bringing you closer to scientific reproducible reports).
+
 ## Reading papers
 
 Let's start with the obvious: catch up with the literature can be done anywhere. If you need to access pay-walled papers, there is different ways:
@@ -77,7 +85,7 @@ If you can not collect new data, you can still work on your data analysis. For t
 
 You may also use the time to investigate new ways to analyse your data, learning a programming language like R and python, and/or testing new algorithms and analysis. It might help to write readme files to describe the data-sets, maybe reorganize the files to facilitate the analysis (as well as adding metadata to  make the data re-usable in different contexts).
 
-**Please reach out to the data curator if you need help to organise your data !**
+**Please reach out to the data curator if you need help to organize your data !**
 
 ## Computational project
 
