@@ -40,8 +40,9 @@ In summary:
 - Keep social contacts
 - Be flexible
  
-> structure your day, welcome the interruptions and keep in touch.  I often break my day with a 'hi there' to a colleague, just to touch base. 
-> ~Scott connor
+> "structure your day, welcome the interruptions and keep in touch.  I often break my day with a 'hi there' to a colleague, just to touch base. "
+>
+> --- Scott Connor
 
 # Possible tasks and how to prepare them
 
