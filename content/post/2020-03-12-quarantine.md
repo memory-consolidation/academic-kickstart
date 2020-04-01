@@ -101,6 +101,8 @@ If you do not have one, you might find a side project not involving animal exper
 
 Last but not least, you can spend time to learn new skills. There are a lot of free offers around, let it be programming, open source software, time management, project management, group moderation, open science topics, scientific writing,...
 
+Have a look at the BIH list: https://www.bihealth.org/de/forschung/quest-center/services/kurse-tools-und-andere-ressourcen-um-das-beste-aus-der-corona-pause-zu-machen/
+
 Some platforms to search for free courses:
 
 - https://www.open.edu/

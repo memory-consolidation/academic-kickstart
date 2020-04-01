@@ -64,12 +64,12 @@ Click the add funding > search and link button. On the wizard search for matthew
 If you did everything right, your orcid will appear in this list: 
 https://orcid.org/orcid-search/search?searchQuery=327654276
 
-## 2. Add a biography in 45 seconds
+### 2. Add a biography in 45 seconds
 
 At the top of your orcid profile is a biography, click on the pencil on the right part of the screen, it will open a dialog box where you can write text. Paste or write a description of yourself in there, it will also appear on the SFB website. Make sure it is set to public.
 
 
-## 3. Add links and picture in 60 seconds
+### 3. Add links and picture in 60 seconds
 
 <img src="/post/2020-02-18-using-orcid_files/walkthrough.002.jpeg" alt="" width="100%"/>
 
@@ -86,32 +86,25 @@ On the left part of the screen, you will find a section named `websites` (scroll
 
 * name the link "my_picture", if you do not have a picture of you on the web yet, you can add one using [gravatar](https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fpublic-api.wordpress.com%2Foauth2%2Fauthorize%2F%3Fclient_id%3D1854%26response_type%3Dcode%26blog_id%3D0%26state%3Dcb4706b4e003f9f33c7c43ca2fbb3f066748ffbcde39b01f709393683fdbbdbd%26redirect_uri%3Dhttps%253A%252F%252Fen.gravatar.com%252Fconnect%252F%253Faction%253Drequest_access_token%26jetpack-code%26jetpack-user-id%3D0%26action%3Doauth2-login&client_id=1854)
 
-## 4. Add a public email address in 30 seconds
+### 4. Add a public email address in 30 seconds
 
 On that same left part of the window, you will find the email address section. Your email was set as private per default, you can either make that one public, or add a second email address that you will make public.
 
 
-## That is it!
+### That is it!
 
 You entered all the information I need so far. But you might think about adding additional information like your affiliation (Employment section), your papers (works section), all funding sources and diploms (education). The processes are semi-automatic now, but some of it can become automatic, for instance if you use your orcid in the publication process.
 
+## Add more information for other purposes
+
+Orcid information can be further used, especially your publication list can be created easily via orcid. In addition you can :
+
+- get a [scienceopen](www.scienceopen.com) profile
+- check your [impact story](www.impactstory.com) badges
+- create a wikidata scholia page (including co-author graphical representation)
 
 
-<!--
-3b. ADD INFO (5-120 min)
-(once you signed in, we can add more information, be sure to set the visibility to "public.
-
-- add the SFB1315 in the funding (see video: https://figshare.com/articles/add_allinfo_small_mov/11848407)
-
-Optional information imported in the website:
-- add a biography text
-- add a link to a picture of you, name it “picture"
-- add a link to your page in the lab, be sure to mention “lab” in its name and put it preferably in the first position.
-- add links you would like to see on your personal page on the website like twitter, github or gitlab pages. 
-- add a visible main email address
-
-
-Optional information not (yet) imported in the website:
+The additional information you can add:
 
 - add all your publication
 - add all your funding
