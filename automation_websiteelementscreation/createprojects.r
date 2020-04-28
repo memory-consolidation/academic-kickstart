@@ -7,9 +7,39 @@ library (data.table)
 
 options(download.file.method="libcurl")
 
+nanull <- function (isnullterm){
+  if (is.null(isnullterm)){NA}else {isnullterm}
+}
+expandorcid <- function(orcidlist){
+  #to test:  orcidlist =orcidlist1
 
+  ## add code without space and '
+  orcidlist$people_code = gsub("[ ']", "-",tolower(paste0(orcidlist$first,"-",orcidlist$last)))
+  ## get links
+  orcidlist$bio_fo = NA
+  ## links
+  orcidlist$githublink_fo=NA
+  orcidlist$twitterlink_fo = NA
+  orcidlist$picturelink_fo = NA
+  orcidlist$lablink_fo = NA
 
-###----------------------------------PROJECTS--PROJECTS--PROJECTS--
+  for (i in c(1: nrow(orcidlist))){
+    a= as.character(orcidlist$orcid[i])
+    b=rorcid::orcid_id(a)[[1]]
+    urlname=b$`researcher-urls`$`researcher-url`$`url-name`
+    url=b$`researcher-urls`$`researcher-url`$url.value
+
+    orcidlist$bio_fo[i] = nanull(b$biography$content)
+    ## links
+    orcidlist$githublink_fo[i]= nanull(url[grepl("github", url)][1])
+    orcidlist$twitterlink_fo[i] = nanull(url[grepl("twitter", url)][1])
+    orcidlist$picturelink_fo[i] = nanull(url[grepl("picture", urlname)][1])
+    orcidlist$lablink_fo[i] = nanull(url[grepl("lab", urlname)][1])
+  }
+  return(orcidlist)
+}
+
+###----------------------------------PROJECTS--PROJECTS--PROJECTS (with links to people)--
 ##get folder with the information sheets
 seafilefolder= "C:/Users/juliencolomb/Seafile/SFB1315info/"
 seafilefolder= "/Users/colombj/Documents/Seafile/SFB1315info/"
@@ -29,6 +59,18 @@ people_sfb <- read_delim(paste0(seafilefolder,"sfb1315_people.csv"),
 # }
 # View(people_sfb)
 
+## pull orcid info
+
+orcidlist1= rorcid::orcid_search(grant_number = 327654276)
+orcidlist1 = rbind( orcidlist1 ,c("Julien", "Colomb", "0000-0002-3127-5520"))
+
+orcidlist1 = expandorcid(orcidlist1)
+people_sfb2 = left_join(people_sfb, orcidlist1, by = c("people_code"))
+
+
+people_sfb = people_sfb2 %>% mutate (orcid = ifelse (orcid.x == "", paste0("https://orcid.org/",orcid.y),orcid.x))
+
+View(people_sfb)
 ##---------------------------------------- make projects
 
 
@@ -63,7 +105,7 @@ for (i in c(1: nrow(SFB_proj))){
 
 
 ###----------------------------------authors--authors--authors-- Make authors (only ones with update and code set)
-## avatar will be in order: default avatar, twitter avatar, manually added avatar in folder
+## avatar will be in order: default avatar, twitter avatar, orcid linked avatar, manually added avatar in folder
 
 
 
@@ -104,12 +146,16 @@ for (i in c(1: nrow(update))){
   }
 
   ## orcid info integration
-  if (update$orcid[i] != ""){
+  if (update$orcid[i] != "https://orcid.org/NA"){
     SOCIAL = paste0(SOCIAL,"\n- icon: orcid \n  icon_pack: ai \n  link: ",update$orcid[i])
+    temp = rorcid::orcid_id(substring(update$orcid[i],19))[[1]]
+    ## modify twitter if info is there
+    temp$`researcher-urls`$`researcher-url`&url-name
+    update$twitter [i]
 
     ## get biography from orcid
-    if (! is.null(rorcid::orcid_id(substring(update$orcid[i],19))[[1]]$biography$content) ){
-      HERETEXT = rorcid::orcid_id(substring(update$orcid[i],19))[[1]]$biography$content
+    if (! is.null(temp$biography$content) ){
+      HERETEXT = temp$biography$content
     }
   }
 
