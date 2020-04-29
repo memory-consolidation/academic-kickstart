@@ -52,7 +52,7 @@ subtitle = "Propagation of hippocampal ripples to the neocortex by way of a subi
 <table id="Main table" style="background-color:rgba(0, 0, 25, 0);border-collapse: collapse;">
 <tr ></tr>
   <tr >
-    <td width = "50%"><img src = "RG/Noam.tiff",  width= "100%" ></td>
+    <td width = "50%"><img src = "RG/Noam.jpg",  width= "100%" ></td>
     <td> A pathway from the hippocampus to the retrosplenial cortex supports the propagation of ripple activity.
     <br><br>
     Ripple oscillations are brief high-frequency events observed throughout the hippocampal formation during rest. They  are believed to support the consolidation of new memories, but their propagation to their neocortical targets in not well understood. Using a combination of high-density multichannel recordings and optogenetic manipulations in-vivo, the authors could describe this pathway (CA1 - subiculum - granular retrosplenial cortex) which is cell type and layer specific.  During ripples, individual cortical neurons appeared to be tuned to specific patterns of hippocampal spiking activity.
