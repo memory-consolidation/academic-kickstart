@@ -8,8 +8,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "Result of the month: 2020-02: A06"
-subtitle = "Inhibition within a premotor circuit controls the timing of vocal turn-taking in zebra finches"
+title = "Result of the month: 2020-05: A02"
+subtitle = "Propagation of hippocampal ripples to the neocortex by way of a subiculum-retrosplenial pathway."
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -52,14 +52,17 @@ subtitle = "Inhibition within a premotor circuit controls the timing of vocal tu
 <table id="Main table" style="background-color:rgba(0, 0, 25, 0);border-collapse: collapse;">
 <tr ></tr>
   <tr >
-    <td width = "50%"><img src = "RG/benichov_vallentin.jpg",  width= "100%" ></td>
-    <td>Zebra finches respond to calls with a stereotyped latency. 
+    <td width = "50%"><img src = "RG/Noam.tif",  width= "100%" ></td>
+    <td> A pathway from the hippocampus to the retrosplenial cortex supports the propagation of ripple activity.
+    <br><br>
+    Ripple oscillations are brief high-frequency events observed throughout the hippocampal formation during rest. They  are believed to support the consolidation of new memories, but their propagation to their neocortical targets in not well understood. Using a combination of high-density multichannel recordings and optogenetic manipulations in-vivo, the authors could describe this pathway (CA1 - subiculum - granular retrosplenial cortex) which is cell type and layer specific.  During ripples, individual cortical neurons appeared to be tuned to specific patterns of hippocampal spiking activity.
     <br>
-    a) An example bird presented with call playbacks at a rate of one per second (grey) responds with calls (blue). <br> b) The zebra finch vocal-motor pathway. The premotor nucleus HVC receives auditory inputs and drives the timing of vocalizations via the descending vocal-motor pathway (blue). <br> c) Effects of bilateral disinhibition of HVC on call response timing. After blocking inhibitory transmission in HVC with bilateral infusion of GABAA receptor antagonist, gabazine, call response latencies are significantly shorter (orange) and more likely to overlap with call playbacks than under control conditions (blue, from (a)). <br> d) Call related activity of HVC neurons. Example traces of four intracellular recordings from HVC neurons aligned to onset of call production. From top to bottom: the recorded traces were obtained from an interneuron (red), two different premotor neurons (green & blue), and a premotor neuron recorded after local application of gabazine (orange). Interneurons increased their firing rate prior to calls, while premotor neurons fired temporally precise bursts around call onset, but were silent when birds are not vocalizing. </td> 
+Ripples propagate from CA1 via the subiculum (SUB) to the granular retrosplenial cortex (RSC). In the subiculum, bursting cells are selectively activated during ripples, while regularly firing cells decrease their activity. Hippocampal ripples are coupled to cortical activity packets, which modulate cortical activity across both superficial (red) and deep (blue) layers at around 6 Hz (top left box). However, only the activity of superficial pyramidal cells is additionally modulated by hippocampal ripples.
+    </td> 
     
   </tr>
   </table>
   
 
 
-Open access nature communication paper: [https://doi.org/10.1038/s41467-019-13938-0](https://doi.org/10.1038/s41467-019-13938-0)
+Open access nature communication paper: [https://doi.org/ 10.1038/s41467-020-15787-8](https://doi.org/10.1038/s41467-020-15787-8)
