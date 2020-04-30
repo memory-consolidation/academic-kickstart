@@ -10,6 +10,7 @@ options(download.file.method="libcurl")
 nanull <- function (isnullterm){
   if (is.null(isnullterm)){NA}else {isnullterm}
 }
+
 expandorcid <- function(orcidlist){
   #to test:  orcidlist =orcidlist1
 
@@ -37,6 +38,10 @@ expandorcid <- function(orcidlist){
     orcidlist$lablink_fo[i] = nanull(url[grepl("lab", urlname)][1])
   }
   return(orcidlist)
+}
+
+repl_from_orcid <- function (ori,orcid){
+  if (is.na(orcid)){ori} else {orcid}
 }
 
 ###----------------------------------PROJECTS--PROJECTS--PROJECTS (with links to people)--
@@ -67,10 +72,20 @@ orcidlist1 = rbind( orcidlist1 ,c("Julien", "Colomb", "0000-0002-3127-5520"))
 orcidlist1 = expandorcid(orcidlist1)
 people_sfb2 = left_join(people_sfb, orcidlist1, by = c("people_code"))
 
+# update info with orcid information as default.
+people_sfb = people_sfb2 %>%
+  mutate (orcid = ifelse (orcid.x == "", paste0("https://orcid.org/",orcid.y),orcid.x))%>%
+  mutate (github = ifelse (is.na(githublink_fo), github,githublink_fo)) %>%
+  mutate (bio = ifelse (is.na(bio_fo), bio, bio_fo)) %>%
+  mutate (twitter = ifelse (is.na(twitterlink_fo), twitter, twitterlink_fo)) %>%
+  mutate (homepage = ifelse (is.na(lablink_fo), homepage, lablink_fo)) %>%
+  mutate (avatar = ifelse (is.na(picturelink_fo),avatar ,picturelink_fo))
 
-people_sfb = people_sfb2 %>% mutate (orcid = ifelse (orcid.x == "", paste0("https://orcid.org/",orcid.y),orcid.x))
+  View(people_sfb)
 
-View(people_sfb)
+
+
+
 ##---------------------------------------- make projects
 
 
@@ -126,9 +141,9 @@ for (i in c(1: nrow(update))){
   templatenew =sub ("HERESHORTBIO", update$bio [i],templatenew)
 
   SOCIAL = paste0("\n- icon: globe \n  icon_pack: fas \n  link: ",update$homepage[i])
-  HERETEXT = update$bio [i] # bigraphy text is either orcid bio, twitter description or this (in order of preference)
+  HERETEXT = update$bio [i] # bigraphy text is either orcid bio, twitter description  (in order of preference)
 
-  ## twitter info integration
+  ## twitter info integration, most rewritten if orcid info exists
   if (update$twitter [i] != ""){
     SOCIAL = paste0(SOCIAL,"\n- icon: twitter \n  icon_pack: fab \n  link: ",update$twitter [i])
 
@@ -137,7 +152,7 @@ for (i in c(1: nrow(update))){
     a=rtweet::lookup_users(tweetname)
     HERETEXT = a$description
 
-    ## add twitter picture
+    ## add twitter picture, will be rewritten if there are orcid information
     if (!file.exists(paste0(pdirectory,"/avatar.jpg"))){
 
       download.file(sub("_normal.", ".",a$profile_image_url),paste0(pdirectory,"/avatar.jpg"), mode ="wb")
@@ -145,23 +160,21 @@ for (i in c(1: nrow(update))){
 
   }
 
-  ## orcid info integration
+  ## orcid info link + bio
   if (update$orcid[i] != "https://orcid.org/NA"){
     SOCIAL = paste0(SOCIAL,"\n- icon: orcid \n  icon_pack: ai \n  link: ",update$orcid[i])
-    temp = rorcid::orcid_id(substring(update$orcid[i],19))[[1]]
-    ## modify twitter if info is there
-    temp$`researcher-urls`$`researcher-url`&url-name
-    update$twitter [i]
 
-    ## get biography from orcid
-    if (! is.null(temp$biography$content) ){
-      HERETEXT = temp$biography$content
-    }
+    HERETEXT = update$bio [i] # bigraphy text is either orcid bio, twitter description  (in order of preference) or default text
   }
 
   ## add github link
   if (update$github[i] != ""){
     SOCIAL = paste0(SOCIAL,"\n- icon: github \n  icon_pack: fab \n  link: ",update$github[i])
+  }
+
+  ## add avatar picture
+  if (update$avatar[i] != ""){
+  download.file(update$avatar[i],paste0(pdirectory,"/avatar.jpg"), mode ="wb")
   }
 
   templatenew =sub ("HERESOCIAL", SOCIAL,templatenew)
@@ -230,42 +243,42 @@ featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230
   return (Image)
 }
 
-# for testing
-# featureimage ("A04")
-
-
-## create and save the file
-for (theproject in substring (SFB_proj$hash,9)) {
-  #print (theproject)
-  theproject %>%
-    featureimage(people_sfb,border = 2) %>%
-    image_write(path = paste0("content/project/",theproject,"/featured.png"), format = "png")
-}
-
-
-
-
-### helper functions used before
-### add project to people list
-
-# people_sfb$project = NA
+# # for testing
+# # featureimage ("A04")
 #
-# projectlists= substring (SFB_proj$hash,9)
-# for (project in projectlists){
-#   print (project)
-#   people_sfb$project[grep(project, people_sfb$bio)] = project
+#
+# ## create and save the file
+# for (theproject in substring (SFB_proj$hash,9)) {
+#   #print (theproject)
+#   theproject %>%
+#     featureimage(people_sfb,border = 2) %>%
+#     image_write(path = paste0("content/project/",theproject,"/featured.png"), format = "png")
 # }
 #
-# people_sfb$project
-# write_delim(people_sfb,paste0(seafilefolder,"sfb1315_people2.csv"),
-#             delim="\t")
-
-i=1
-substring(SFB_proj$hash [i],9)
-
-peoproj =people_sfb %>% filter(grepl (substring(SFB_proj$hash [i],9), project)) %>%
-  select(people_code)%>%
-  pull()
-
-paste0( '"',paste0(peoproj, collapse = '","'), '"')
-
+#
+#
+#
+# ### helper functions used before
+# ### add project to people list
+#
+# # people_sfb$project = NA
+# #
+# # projectlists= substring (SFB_proj$hash,9)
+# # for (project in projectlists){
+# #   print (project)
+# #   people_sfb$project[grep(project, people_sfb$bio)] = project
+# # }
+# #
+# # people_sfb$project
+# # write_delim(people_sfb,paste0(seafilefolder,"sfb1315_people2.csv"),
+# #             delim="\t")
+#
+# i=1
+# substring(SFB_proj$hash [i],9)
+#
+# peoproj =people_sfb %>% filter(grepl (substring(SFB_proj$hash [i],9), project)) %>%
+#   select(people_code)%>%
+#   pull()
+#
+# paste0( '"',paste0(peoproj, collapse = '","'), '"')
+#
