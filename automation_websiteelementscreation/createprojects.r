@@ -105,7 +105,7 @@ for (i in c(1: nrow(SFB_proj))){
   templatenew =sub ("heretheautors", paste0( '"',paste0(peoproj, collapse = '","'), '"'),templatenew)
   templatenew =sub ("IMAGECAPTION", SFB_proj$featured_image_caption[i],templatenew)
   #### this will be modified once the RG gets the right function (parametrised url)
-  MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>')
+  MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard?search=group:sfb1315-',substring(SFB_proj$hash[i],9),' height=1000px width=90% ></iframe>')
   templatenew =sub ("maintexthere", SFB_proj$description [i],templatenew )
   templatenew =sub ("SFgallerylink", MAINTEXT2,templatenew )
 
