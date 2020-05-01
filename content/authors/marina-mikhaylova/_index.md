@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: 
+role: PI
 
 # Organizations/Affiliations
 organizations:
@@ -66,4 +66,4 @@ social:
 # - Visitors
 ---
 
-Research Group Leader at the ZMNH (UKE), Hamburg (neuronal organelle trafficking, cytoskeleton, synapses)
+

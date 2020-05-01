@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD student in project B05
+bio: I am a psychologist and neuroscientist. I use behavioral, virtual reality and neuroimaging methods to investigate memory consolidation and spatial navigation in neurological patients and healthy subjects.
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -34,6 +34,9 @@ social:
 - icon: orcid 
   icon_pack: ai 
   link: https://orcid.org/0000-0002-2958-3057
+- icon: github 
+  icon_pack: fab 
+  link: https://github.com/PatMaier92
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -66,4 +69,4 @@ social:
 # - Visitors
 ---
 
-PhD candidate at Charité Berlin | Psychology & Neuroscience 🧠 | Memory 🧩 and Spatial Navigation 🗺️
+I am a psychologist and neuroscientist. I use behavioral, virtual reality and neuroimaging methods to investigate memory consolidation and spatial navigation in neurological patients and healthy subjects.

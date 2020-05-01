@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: 
+role: PI
 
 # Organizations/Affiliations
 organizations:
@@ -66,4 +66,4 @@ social:
 # - Visitors
 ---
 
-PI of Lifespan Cognitive and Brain Development (LISCO) Lab at Goethe University Frankfurt, episodic memory, Jacobs Foundation Research Fellow 2018–2020
+

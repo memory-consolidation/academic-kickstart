@@ -28,6 +28,9 @@ social:
 - icon: globe 
   icon_pack: fas 
   link: https://itb.biologie.hu-berlin.de/~kempter/
+- icon: orcid 
+  icon_pack: ai 
+  link: https://orcid.org/0000-0003-2076-1547
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".

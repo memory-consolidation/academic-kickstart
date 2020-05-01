@@ -66,4 +66,4 @@ social:
 # - Visitors
 ---
 
-Neurobiologist interested in vocal communication and all the craziness going on in songbird brains.
+Former post doc in project A06

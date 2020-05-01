@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: 
+role: PI
 
 # Organizations/Affiliations
 organizations:
@@ -66,4 +66,4 @@ social:
 # - Visitors
 ---
 
-Cognitive Neuroscientist & Neurologist | Assistant Professor at Charité Berlin and Berlin School of Mind & Brain
+

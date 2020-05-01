@@ -63,4 +63,6 @@ social:
 # - Visitors
 ---
 
-Hayallerimi oda sıcaklığında muhafaza ederim.
+"I wumbo, you wumbo, he she we wumbo."
+~Hacettepe Faculty of Medicine 2018
+~PhD Student in Charité Department of Radiology

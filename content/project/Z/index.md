@@ -3,7 +3,7 @@
 
 title: "Z: data management and collaboration"
 summary: ""
-authors: ["matthew-larkum","admin"]
+authors: ["matthew-larkum","julien-colomb"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00
@@ -49,5 +49,5 @@ You can access the latest unpublished results for this project on the SFB1315 pr
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/dashboard?search=group:sfb1315-Z height=1000px width=90% ></iframe>
 </center>

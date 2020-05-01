@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: 
+role: PI
 
 # Organizations/Affiliations
 organizations:
@@ -66,4 +66,4 @@ social:
 # - Visitors
 ---
 
-deep microscopy, neurophotonics, brainwide circuits
+

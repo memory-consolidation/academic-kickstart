@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD student in project B01
+bio: Computational Neuroscience PhD student @ Sprekeler Lab
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -28,9 +28,15 @@ social:
 - icon: globe 
   icon_pack: fas 
   link: https://www.sprekelerlab.org/
+- icon: twitter 
+  icon_pack: fab 
+  link: https://twitter.com/denis_alevi
 - icon: orcid 
   icon_pack: ai 
   link: https://orcid.org/0000-0001-8514-7199
+- icon: github 
+  icon_pack: fab 
+  link: https://github.com/denisalevi
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -63,4 +69,4 @@ social:
 # - Visitors
 ---
 
-PhD student in project B01
+Computational Neuroscience PhD student @ Sprekeler Lab
