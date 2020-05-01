@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Jiyun Shin
+name: Dr. Julien Colomb
 
 # Username (this should match the folder name)
 authors:
-- jiyun-shin
+- julien-colomb
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: PhD student
+role: Data curator for the SFB1315
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD student in project A04
+bio: Former neuro-geneticist (10 year of research on fruit fly memory and behavior), I have been more recently interested in data analysis and management, as a specialisation for my interests in open science (open research). I am presently working on ways (technical and social) to implement the principles of FAIR and open data in the lab workflow and ways to foster collaboration between researchers via the SmartFigure Gallery project.
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,10 +27,16 @@ bio: PhD student in project A04
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://www.projekte.hu-berlin.de/en/larkum/
+  link: https://www.biologie.hu-berlin.de/en/gruppenseiten-en/sfb1315
 - icon: twitter 
   icon_pack: fab 
-  link: https://twitter.com/jshin92
+  link: https://twitter.com/j_colomb
+- icon: orcid 
+  icon_pack: ai 
+  link: https://orcid.org/0000-0002-3127-5520
+- icon: github 
+  icon_pack: fab 
+  link: https://github.com/jcolomb
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -63,6 +69,4 @@ social:
 # - Visitors
 ---
 
-PhD student in Larkum lab, Berlin
-Dendrites/Sleep/Memory consolidation/in vivo recording
-Classical music lover
+Former neuro-geneticist (10 year of research on fruit fly memory and behavior), I have been more recently interested in data analysis and management, as a specialisation for my interests in open science (open research). I am presently working on ways (technical and social) to implement the principles of FAIR and open data in the lab workflow and ways to foster collaboration between researchers via the SmartFigure Gallery project.

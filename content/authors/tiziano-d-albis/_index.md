@@ -66,4 +66,4 @@ social:
 # - Visitors
 ---
 
-Post doc in project B01
+PhD candidate in Theoretical Neuroscience @ Kempter's lab in Berlin. Passionate about brains and computers.

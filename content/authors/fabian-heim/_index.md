@@ -66,4 +66,4 @@ social:
 # - Visitors
 ---
 
-Post doc in project A06
+Songbirdscientist. PhD candidate in behavioural neurogenomics investigating auditory perception and vocal communication. Coffeelover ☕️ and twitcher 🐦🔭

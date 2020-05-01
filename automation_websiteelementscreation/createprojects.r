@@ -104,8 +104,10 @@ for (i in c(1: nrow(SFB_proj))){
 
   templatenew =sub ("heretheautors", paste0( '"',paste0(peoproj, collapse = '","'), '"'),templatenew)
   templatenew =sub ("IMAGECAPTION", SFB_proj$featured_image_caption[i],templatenew)
-  #### this will be modified once the RG gets the right function (parametrised url)
+  #### erase second line when RG gets the right function (parametrised url)
   MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard?search=group:sfb1315-',substring(SFB_proj$hash[i],9),' height=1000px width=90% ></iframe>')
+
+  MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>')
   templatenew =sub ("maintexthere", SFB_proj$description [i],templatenew )
   templatenew =sub ("SFgallerylink", MAINTEXT2,templatenew )
 
@@ -124,7 +126,7 @@ for (i in c(1: nrow(SFB_proj))){
 
 
 
-update = people_sfb %>% filter(update == "yes") %>% filter (people_code != "")
+update = people_sfb %>% filter (people_code != "") #%>% filter(update == "yes")
 
 p_template =  readLines("automation_websiteelementscreation/authors_template.md")
 
@@ -152,7 +154,7 @@ for (i in c(1: nrow(update))){
     a=rtweet::lookup_users(tweetname)
     HERETEXT = a$description
 
-    ## add twitter picture, will be rewritten if there are orcid information
+    ## add twitter picture, will be rewritten if there are orcid information, will not write if there is already a picture
     if (!file.exists(paste0(pdirectory,"/avatar.jpg"))){
 
       download.file(sub("_normal.", ".",a$profile_image_url),paste0(pdirectory,"/avatar.jpg"), mode ="wb")
@@ -163,8 +165,7 @@ for (i in c(1: nrow(update))){
   ## orcid info link + bio
   if (update$orcid[i] != "https://orcid.org/NA"){
     SOCIAL = paste0(SOCIAL,"\n- icon: orcid \n  icon_pack: ai \n  link: ",update$orcid[i])
-
-    HERETEXT = update$bio [i] # bigraphy text is either orcid bio, twitter description  (in order of preference) or default text
+if (!is.na(update$bio_fo [i]))    HERETEXT = update$bio_fo [i] # bigraphy text is either orcid bio, twitter description  (in order of preference) or default text
   }
 
   ## add github link
@@ -173,7 +174,7 @@ for (i in c(1: nrow(update))){
   }
 
   ## add avatar picture
-  if (update$avatar[i] != ""){
+  if (update$avatar[i] != "" & update$avatar[i] != "done"){
   download.file(update$avatar[i],paste0(pdirectory,"/avatar.jpg"), mode ="wb")
   }
 
@@ -243,17 +244,17 @@ featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230
   return (Image)
 }
 
-# # for testing
-# # featureimage ("A04")
-#
-#
-# ## create and save the file
-# for (theproject in substring (SFB_proj$hash,9)) {
-#   #print (theproject)
-#   theproject %>%
-#     featureimage(people_sfb,border = 2) %>%
-#     image_write(path = paste0("content/project/",theproject,"/featured.png"), format = "png")
-# }
+# for testing
+# featureimage ("A04")
+
+
+## create and save the file
+for (theproject in substring (SFB_proj$hash,9)) {
+  #print (theproject)
+  theproject %>%
+    featureimage(people_sfb,border = 2) %>%
+    image_write(path = paste0("content/project/",theproject,"/featured.png"), format = "png")
+}
 #
 #
 #

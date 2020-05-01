@@ -25,22 +25,27 @@ bio: PI in projects A01, A02
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: globe
-  icon_pack: fas
+- icon: globe 
+  icon_pack: fas 
   link: https://schmitz.neurocure.de/
-#- icon: envelope
-#  icon_pack: fas
-#  link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
-#- icon: twitter
-#  icon_pack: fab
-#  link: https://twitter.com/j_colomb
-- icon: orcid
-  icon_pack: ai
+- icon: orcid 
+  icon_pack: ai 
   link: https://orcid.org/0000-0003-2741-5241
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/jcolomb
-
+# - icon: envelope
+#   icon_pack: fas
+#   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/j_colomb
+# - icon: orcid
+#   icon_pack: ai
+#   link: https://orcid.org/0000-0002-3127-5520
+# - icon: github
+#   icon_pack: fab
+#   link: https://github.com/jcolomb
+# - icon: globe
+#   icon_pack: fas
+#   link: HEREHOMEPAGE  
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
@@ -58,3 +63,4 @@ social:
 # - Visitors
 ---
 
+PI in projects A01, A02

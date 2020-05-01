@@ -49,5 +49,5 @@ You can access the latest unpublished results for this project on the SFB1315 pr
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard?search=group:sfb1315-A02 height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>
 </center>

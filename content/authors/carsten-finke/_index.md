@@ -66,4 +66,4 @@ social:
 # - Visitors
 ---
 
-
+Cognitive Neuroscientist & Neurologist | Assistant Professor at Charité Berlin and Berlin School of Mind & Brain | Head of @BerlinCognition
