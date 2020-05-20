@@ -22,7 +22,9 @@ This blog post will explain different steps to add an image in the preview of yo
 
 # Sign in
 
-I registered most of you already, so you should be able to sign in with your email address. You can now change your information by clicking on the profile menu on the top right: add your name and optionally your orcid id, leave the rest empty for now. Go back to the dashboard once finished.
+Visit https://sdash.sourcedata.io.
+
+I registered most of you already, so you should be able to sign in with your email address (otherwise, you will need to register yourself). You can now change your information by clicking on the profile menu on the top right: add your name and optionally your orcid id, leave the rest empty for now. Go back to the dashboard once finished.
 
 <img src="/post/2020-05-120-Smartfigure_files/Screenshot 2020-05-20 at 16.14.21.png" alt="update your profile info" width="100%"/>
 
@@ -38,7 +40,7 @@ Once you see the figure on your gallery, click on it to access the metadata. In 
 # Share the figure
 
 
-You should see the SFB1315 Members group on the left pannel, if you do not see it, please contact the data curator (Julien Colomb) to get access.
+You should see the SFB1315 Members group on the left pannel, if you do not see it, please contact me (Julien Colomb) to get access.
 
 If you see the group, it means you can share figures to it. Click on the right circle visible on the figure thumbnail in the gallery. It will select the figure (you can select more than one at a time). Now click the people icon on the banner on the top right. Choose the `sfb1315 Members` in the dropdown menu, and click the `add to group` button.
 

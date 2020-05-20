@@ -4,7 +4,7 @@ author: Julien Colomb
 date: '2020-02-18'
 slug: working-from-home
 categories:
-  - walkthrough
+  - covid
 tags: []
 subtitle: ''
 summary: ''
