@@ -44,7 +44,7 @@ slides: ""
   
 maintexthere
 
-You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+SFB1315 member can access the latest unpublished results for this project on the its smartfigure gallery: 
 </DIV>
 </DIV>
 

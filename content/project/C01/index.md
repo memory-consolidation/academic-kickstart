@@ -48,10 +48,10 @@ How memory circuits are consolidated can also be studied by examining gene expre
 
 Knowhow in molecular biology, cell biology, physiology and bioinformatics are required to develop the above tools, as well as analyzing and understanding the outcome of their use. The C01 project will serve as a hub for research in design and production of tools in order to support circuit analysis on morphological, molecular and functional levels.
 
-You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+SFB1315 member can access the latest unpublished results for this project on the its smartfigure gallery: 
 </DIV>
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:C01" height=1000px width=90% ></iframe>
 </center>

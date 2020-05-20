@@ -44,10 +44,10 @@ slides: ""
   
 During development, plastic synapses enable a neuronal circuit to form a memory, but how these malleable synaptic connections allow for a durable representation on longer timescales is still a matter of debate. While the consolidation of memories is likely to be multifaceted, experimental evidence for a role of inhibition in this process is accumulating. This project provides a theory-driven hypothesis of how feedforward inhibition can help to stabilize memories. We propose a network model that depends on a precisely timed interplay between excitation and inhibition: Targeted inhibition in parallel feedforward circuits can bring excitatory plasticity to a hold and “freeze” the synaptic representation once an initial memory engram has been formed. In order to explore and test the hypothesis, the project takes an interdisciplinary perspective and combines mathematical approaches with the experimental system of memory consolidation in the songbird. During a self-guided memorization process, zebra finches learn to imitate a tutor song, allowing for controlled behavioral training paradigms accompanied by electrophysiological monitoring of cellular activity. Recently, all required neuronal players for the hypothesized engram-protecting mechanism were identified in a premotor area of the songbird. An inhibition-dependent protection of acquired memories correlating with actual learning progress was observed. Within this project, we will therefore develop a conceptual mathematical model based on feedforward inhibition that can be directly tested in a naturally occurring learning context in freely moving animals. The produced song of the zebra finch will give us a direct readout of what part of a behavior is consolidated and which part still has to be learned. Given the potential generality of the feedforward inhibition mechanism, we will strive to identify a principle that extends beyond the songbird and sheds light on consolidation in other species, including insects or mammals as they are explored in this CRC.
 
-You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+SFB1315 member can access the latest unpublished results for this project on the its smartfigure gallery: 
 </DIV>
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:A06" height=1000px width=90% ></iframe>
 </center>

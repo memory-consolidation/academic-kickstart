@@ -44,10 +44,10 @@ slides: ""
   
 The role of dopamine in consolidation events that fix information at synapses and allow transfer from one region to another is poorly understood. In this project, we will investigate the relationship between memory performance and dopamine-modulated hippocampal memory consolidation in young and old subjects using a monetary incentive delay task, multimodal neuroimaging and multiscale brain models. We will use several experimental and theoretical strategies to gain understanding into the neurocomputational mechanisms associated with hippocampal dopaminergic modulation and its changes during aging. Combining 7T high-field MRI, simultaneous MR−PET, multivariate pattern classification analysis and brain network modeling, we will study memory processes associated with offline replay of rewarding memories in relation to dopamine release and structural changes of ageing on multiple spatial and temporal scales.
 
-You can access the latest unpublished results for this project on the SFB1315 private smartfigure gallery below (in development): 
+SFB1315 member can access the latest unpublished results for this project on the its smartfigure gallery: 
 </DIV>
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:B06" height=1000px width=90% ></iframe>
 </center>
