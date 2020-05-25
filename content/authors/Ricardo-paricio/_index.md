@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Fabian Heim
+name: Ricardo Paricio
 
 # Username (this should match the folder name)
 authors:
-- fabian-heim
+- Ricardo-paricio
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Post-doc
+role: PhD student
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Research assistent in project A06
+bio: PhD student in project A05
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,13 +27,7 @@ bio: Research assistent in project A06
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://vallentinlab.com/
-- icon: twitter 
-  icon_pack: fab 
-  link: https://twitter.com/songbirdbrain
-- icon: orcid 
-  icon_pack: ai 
-  link: https://orcid.org/0000-0001-8988-0793
+  link: https://www.jlab.berlin/
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -66,4 +60,4 @@ social:
 # - Visitors
 ---
 
-Songbirdscientist. Postdoctoral researcher investigating inhibitory impact in imitation learning. Coffeelover ☕️ and twitcher 🐦🔭
+PhD student in project A05
