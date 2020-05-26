@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Fabian Heim
+name: Yongtian Liang
 
 # Username (this should match the folder name)
 authors:
-- fabian-heim
+- yongtian-liang
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Post-doc
+role: PhD student
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Songbirdscientist. Postdoctoral researcher investigating inhibitory impact in imitation learning.
+bio: PhD student in project A08
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,13 +27,10 @@ bio: Songbirdscientist. Postdoctoral researcher investigating inhibitory impact 
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://vallentinlab.com/
-- icon: twitter 
-  icon_pack: fab 
-  link: https://twitter.com/songbirdbrain
+  link: https://www.activezone-berlin.de/
 - icon: orcid 
   icon_pack: ai 
-  link: https://orcid.org/0000-0001-8988-0793
+  link: https://orcid.org/0000-0002-5802-1045
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -66,4 +63,4 @@ social:
 # - Visitors
 ---
 
-Songbirdscientist. Postdoctoral researcher investigating inhibitory impact in imitation learning.
+PhD student in project A08
