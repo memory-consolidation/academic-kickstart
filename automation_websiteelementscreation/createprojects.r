@@ -66,10 +66,14 @@ people_sfb <- read_delim(paste0(seafilefolder,"sfb1315_people.csv"),
 
 ## pull orcid info
 
-orcidlist1= rorcid::orcid_search(grant_number = 327654276)
-orcidlist1 = rbind( orcidlist1 ,c("Julien", "Colomb", "0000-0002-3127-5520"))
-
+orcidlist1= rorcid::orcid_search(grant_number = 327654276, rows =100)
+#orcidlist1 = rbind( orcidlist1 ,c("Julien", "Colomb", "0000-0002-3127-5520"))
 orcidlist1 = expandorcid(orcidlist1)
+
+# test all orcid names are in sfblist:
+testingnames=right_join(people_sfb, orcidlist1, by = c("people_code"))
+if(nrow(na.omit(testingnames[,2])) == nrow(testingnames[,2])) print ("all orcid entry in list") else print(testingnames)
+
 people_sfb2 = left_join(people_sfb, orcidlist1, by = c("people_code"))
 
 # update info with orcid information as default.
