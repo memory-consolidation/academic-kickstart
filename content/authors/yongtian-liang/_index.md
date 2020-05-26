@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Yongtian Liang
+name: Dr. Yongtian Liang
 
 # Username (this should match the folder name)
 authors:
@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD student
+role: Post-doc
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD student in project A08
+bio: Postdoc in project A08
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -63,4 +63,4 @@ social:
 # - Visitors
 ---
 
-PhD student in project A08
+Postdoc in project A08
