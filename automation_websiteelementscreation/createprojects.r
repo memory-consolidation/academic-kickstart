@@ -1,3 +1,9 @@
+# serve website:
+if (blogdown::hugo_version() != "0.58.3") blogdown::install_hugo(version ="0.58.3", force =TRUE, use_brew = FALSE)
+blogdown::serve_site()
+
+###--------
+
 library(readr)
 library (dplyr)
 
