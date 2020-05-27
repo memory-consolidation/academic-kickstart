@@ -8,7 +8,7 @@ categories:
 tags: []
 subtitle: ''
 summary: ''
-authors: []
+authors: [admin]
 lastmod: '2020-02-18T21:59:52+01:00'
 featured: no
 image:

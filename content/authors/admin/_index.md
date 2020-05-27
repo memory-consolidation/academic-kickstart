@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Julien Colomb
+name: Dr. Julien Colomb
 
 # Username (this should match the folder name)
 authors:
@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Data curator
+role: Data curator for the SFB1315
 
 # Organizations/Affiliations
 organizations:
@@ -18,25 +18,41 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: An open science and data management expert.
+bio: Open science and data management expert.
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
-- icon: twitter
-  icon_pack: fab
+- icon: globe 
+  icon_pack: fas 
+  link: https://sfb1315-output.de
+- icon: twitter 
+  icon_pack: fab 
   link: https://twitter.com/j_colomb
-- icon: orcid
-  icon_pack: ai
+- icon: orcid 
+  icon_pack: ai 
   link: https://orcid.org/0000-0002-3127-5520
-- icon: github
-  icon_pack: fab
+- icon: github 
+  icon_pack: fab 
   link: https://github.com/jcolomb
+# - icon: envelope
+#   icon_pack: fas
+#   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/j_colomb
+# - icon: orcid
+#   icon_pack: ai
+#   link: https://orcid.org/0000-0002-3127-5520
+# - icon: github
+#   icon_pack: fab
+#   link: https://github.com/jcolomb
+# - icon: globe
+#   icon_pack: fas
+#   link: HEREHOMEPAGE  
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv
@@ -44,7 +60,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "julien.colomb@fu-berlin.de"
+#email: "julien.colomb@fu-berlin.de"
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
@@ -53,3 +69,4 @@ email: "julien.colomb@fu-berlin.de"
 # - Visitors
 ---
 
+Former neuro-geneticist (10 year of research on fruit fly memory and behavior), I have been more recently interested in data analysis and management, as a specialisation for my interests in open science (open research). I am presently working on ways (technical and social) to implement the principles of FAIR and open data in the lab workflow and ways to foster collaboration between researchers via the SmartFigure Gallery project.
