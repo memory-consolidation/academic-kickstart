@@ -58,9 +58,9 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - PhD student
+ 
 ---
 
 I am a PhD candidate in the Kempter Lab (Theoretical Neuroscience) and interested in systems memory consolidation.

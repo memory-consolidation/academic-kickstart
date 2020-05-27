@@ -27,6 +27,10 @@
   name = "Other Research objects"
   url = "#slider"
   weight = 40
+[[main]]
+  name = "People list"
+  url = "/people/"
+  weight = 40
 
 [[main]]
   name = "Your feedback"

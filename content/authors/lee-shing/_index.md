@@ -61,9 +61,9 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - PI
+ 
 ---
 
 PI of Lifespan Cognitive and Brain Development (LISCO) Lab at Goethe University Frankfurt, episodic memory, Jacobs Foundation Research Fellow 2018–2020

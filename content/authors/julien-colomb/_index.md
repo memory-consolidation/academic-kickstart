@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Data curator for the SFB1315
+role: Staff
 
 # Organizations/Affiliations
 organizations:
@@ -64,9 +64,9 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - Staff
+ 
 ---
 
 Former neuro-geneticist (10 year of research on fruit fly memory and behavior), I have been more recently interested in data analysis and management, as a specialisation for my interests in open science (open research). I am presently working on ways (technical and social) to implement the principles of FAIR and open data in the lab workflow and ways to foster collaboration between researchers via the SmartFigure Gallery project.

@@ -1,6 +1,6 @@
 ---
 title: Working from home
-author: Julien Colomb
+author: admin
 date: '2020-02-18'
 slug: working-from-home
 categories:
@@ -8,7 +8,7 @@ categories:
 tags: []
 subtitle: ''
 summary: ''
-authors: []
+authors: [admin]
 lastmod: '2020-02-18T21:59:52+01:00'
 featured: no
 image:

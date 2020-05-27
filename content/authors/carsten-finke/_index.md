@@ -61,9 +61,9 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - PI
+ 
 ---
 
 Cognitive Neuroscientist & Neurologist | Assistant Professor at Charité Berlin and Berlin School of Mind & Brain | Head of @BerlinCognition

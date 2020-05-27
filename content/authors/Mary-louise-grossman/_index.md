@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Prof. David Owald
+name: Mary Louise Grossman
 
 # Username (this should match the folder name)
 authors:
-- david-owald
+- Mary-louise-grossman
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: PI
+role: Staff
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio: Project coordinator
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,13 +27,10 @@ bio:
 social:
 - icon: globe 
   icon_pack: fas 
-  link: http://owald-lab.de/
-- icon: twitter 
-  icon_pack: fab 
-  link: https://twitter.com/OwaldD
+  link: 
 - icon: orcid 
   icon_pack: ai 
-  link: https://orcid.org/0000-0001-7747-7884
+  link: https://orcid.org/0000-0002-4600-7131
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -62,8 +59,8 @@ social:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
- - PI
+ - Staff
  
 ---
 
-fly doc
+Project coordinator

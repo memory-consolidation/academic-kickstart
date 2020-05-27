@@ -1,6 +1,6 @@
 ---
 title: Uplaoding figures to your smartfigure gallery preview
-author: Julien Colomb
+author: admin
 date: '2020-05-20'
 slug: smartfigure-preview
 categories:
@@ -8,7 +8,7 @@ categories:
 tags: []
 subtitle: ''
 summary: ''
-authors: []
+authors: [admin]
 lastmod: '2020-02-18T21:59:52+01:00'
 featured: no
 image:
