@@ -3,7 +3,7 @@
 
 title: "B03: Modulation of memory consolidation in humans"
 summary: ""
-authors: ["caglar-cakan","robert-malinowski","cristiana-dimulescu","daniela-obst","nicolas-roth","liliia-schevchuk","julia-ladenbauer","michael-scholz","agnes-floeel","klaus-obermayer"]
+authors: ["caglar-cakan","robert-malinowski","cristiana-dimulescu","daniela-obst","nicolas-roth","liliia-schevchuk","julia-ladenbauer","michael-scholz","Agnes-fl-el","klaus-obermayer"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

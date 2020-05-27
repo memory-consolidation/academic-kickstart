@@ -1,10 +1,10 @@
 ---
 # Display name
-name: Prof. Agnes Flöel
+name: Prof. Christoph Ploner
 
 # Username (this should match the folder name)
 authors:
-- agnes-floeel
+- christoph-johannes-ploner
 
 # Is this the primary user of the site?
 superuser: false
@@ -27,13 +27,10 @@ bio:
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://www2.medizin.uni-greifswald.de/neurolog/klinik/mitarbeiter/prof-dr-agnes-floeel/
-- icon: twitter 
-  icon_pack: fab 
-  link: https://twitter.com/AgnesFloel
+  link: https://neurologie.charite.de/en/forschung/working_groups/brain_behavior/
 - icon: orcid 
   icon_pack: ai 
-  link: https://orcid.org/0000-0002-1475-5872
+  link: https://orcid.org/0000-0003-0983-4530
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".

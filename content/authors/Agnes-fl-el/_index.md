@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Dr. Roberta Evangelista
+name: Prof. Agnes Flöel
 
 # Username (this should match the folder name)
 authors:
-- roberta-evangelista
+- Agnes-fl-el
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: alumni
+role: PI
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Former PhD student in projects A01
+bio: 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,10 +27,13 @@ bio: Former PhD student in projects A01
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://itb.biologie.hu-berlin.de/~kempter/
+  link: https://www2.medizin.uni-greifswald.de/neurolog/klinik/mitarbeiter/prof-dr-agnes-floeel/
 - icon: twitter 
   icon_pack: fab 
-  link: https://twitter.com/denis_alevi
+  link: https://twitter.com/AgnesFloel
+- icon: orcid 
+  icon_pack: ai 
+  link: https://orcid.org/0000-0002-1475-5872
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -63,4 +66,4 @@ social:
 # - Visitors
 ---
 
-Computational Neuroscience PhD student @ Sprekeler Lab
+

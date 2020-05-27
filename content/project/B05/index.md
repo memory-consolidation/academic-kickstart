@@ -3,7 +3,7 @@
 
 title: "B05: Spatial memory consolidation networks"
 summary: ""
-authors: ["patrizia-maier","deetje-iggena","frederik-bartels","carsten-finke","christoph-ploner"]
+authors: ["patrizia-maier","deetje-iggena","frederik-bartels","carsten-finke","christoph-johannes-ploner"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

@@ -3,7 +3,7 @@
 
 title: "C01: Development of molecular tools for manipulating and studying memory engrams"
 summary: ""
-authors: ["claire-cooper","foteini-paraskevopulou","Yinth-andrea-bernal","anisha-dayaram","amrei-kunde","beatriz-rebollo-gonzalez","thorsten-trimbuch","marcial-camacho-perez","peter-hegemann","christian-rosemund","Matthias-broser"]
+authors: ["claire-cooper","foteini-paraskevopulou","Yinth-andrea-bernal","anisha-dayaram","stella-amrei-kunde","beatriz-rebollo-gonzalez","thorsten-trimbuch","marcial-camacho-perez","peter-hegemann","christian-rosenmund","Matthias-broser"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

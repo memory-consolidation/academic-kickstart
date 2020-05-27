@@ -11,11 +11,13 @@ nanull <- function (isnullterm){
   if (is.null(isnullterm)){NA}else {isnullterm}
 }
 
-expandorcid <- function(orcidlist){
-  #to test:  orcidlist =orcidlist1
+expandorcid <- function(orcid_numberslist){
+  #to test:  orcid_numberslist =orcidnumberlist
+  orcidlist =data.frame(orcid= orcid_numberslist)
 
-  ## add code without space and '
-  orcidlist$people_code = gsub("[ ']", "-",tolower(paste0(orcidlist$first,"-",orcidlist$last)))
+  orcidlist$givenn_name = NA
+  orcidlist$family_name = NA
+  orcidlist$people_code = NA
   ## get links
   orcidlist$bio_fo = NA
   ## links
@@ -26,9 +28,16 @@ expandorcid <- function(orcidlist){
 
   for (i in c(1: nrow(orcidlist))){
     a= as.character(orcidlist$orcid[i])
+    print(a)
     b=rorcid::orcid_id(a)[[1]]
     urlname=b$`researcher-urls`$`researcher-url`$`url-name`
     url=b$`researcher-urls`$`researcher-url`$url.value
+
+    # name
+    orcidlist$givenn_name [i]= b$name$`given-names`
+    orcidlist$family_name [i]=b$name$`family-name`
+    ## add code without space and '
+    orcidlist$people_code [i]=gsub("[^a-zA-Z0-9]", "-",tolower(paste0(b$name$`given-names`,"-",b$name$`family-name`)))
 
     orcidlist$bio_fo[i] = nanull(b$biography$content)
     ## links
@@ -55,6 +64,7 @@ SFB_proj <- read_delim(paste0(seafilefolder,"sfb1315_project-people.csv"),
 
 people_sfb <- read_delim(paste0(seafilefolder,"sfb1315_people.csv"),
                          "\t", trim_ws = TRUE, skip = 0, na=character())
+people_sfb$orcidnum=as.character(substring(people_sfb$orcid,19))
 
 ## used to create people code
 # people_sfb$people_code2 = NA
@@ -66,13 +76,20 @@ people_sfb <- read_delim(paste0(seafilefolder,"sfb1315_people.csv"),
 
 ## pull orcid info
 
+# get orcid numbers automaticall via a search
 orcidlist1= rorcid::orcid_search(grant_number = 327654276, rows =100)
-#orcidlist1 = rbind( orcidlist1 ,c("Julien", "Colomb", "0000-0002-3127-5520"))
-orcidlist1 = expandorcid(orcidlist1)
+
+#Pool orcid and manual entries for orcid numbers:
+
+orcidnumberlist = unique(c(as.character(orcidlist1$orcid),as.list(people_sfb [people_sfb$orcidnum != "", ]%>% select (orcidnum))[[1]]))
+
+# Get information
+
+orcidlist1 = expandorcid(orcidnumberlist)
 
 # test all orcid names are in sfblist:
 testingnames=right_join(people_sfb, orcidlist1, by = c("people_code"))
-if(nrow(na.omit(testingnames[,2])) == nrow(testingnames[,2])) print ("all orcid entry in list") else print(testingnames)
+if(nrow(na.omit(testingnames[,2])) == nrow(testingnames[,2])) print ("all orcid entry in list") else View(testingnames)
 
 people_sfb2 = left_join(people_sfb, orcidlist1, by = c("people_code"))
 
@@ -137,14 +154,14 @@ p_template =  readLines("automation_websiteelementscreation/authors_template.md"
 for (i in c(1: nrow(update))){
   # create directory
   pdirectory =paste0("content/authors/",update$people_code[i])
-  dir.create(pdirectory)
+  dir.create(pdirectory, showWarnings=FALSE)
 
   # create index
   templatenew = p_template
   templatenew =sub ("DISPLAYNAME", update$Name[i],templatenew)
   templatenew =sub ("USERNAME", update$people_code[i],templatenew)
   templatenew =sub ("HEREROLE", update$role_group[i],templatenew)
-  templatenew =sub ("HERESHORTBIO", update$bio [i],templatenew)
+  templatenew =sub ("HERESHORTBIO", gsub("\"","'",update$bio [i]),templatenew)
 
   SOCIAL = paste0("\n- icon: globe \n  icon_pack: fas \n  link: ",update$homepage[i])
   HERETEXT = update$bio [i] # bigraphy text is either orcid bio, twitter description  (in order of preference)
