@@ -109,7 +109,9 @@ people_sfb = people_sfb2 %>%
   mutate (twitter = ifelse (is.na(twitterlink_fo), twitter, twitterlink_fo)) %>%
   mutate (homepage = ifelse (is.na(lablink_fo), homepage, lablink_fo)) %>%
   mutate (avatar = ifelse (is.na(picturelink_fo),avatar ,picturelink_fo))%>%
-  mutate (people_code =people_code_orcid)
+  mutate (people_code = ifelse (!is.na(people_code_orcid), people_code_orcid,peoplecode))%>%
+  mutate (people_code = paste0("sfb-",gsub("[^a-zA-Z0-9]", "",people_code)))
+
 
   View(people_sfb)
 
@@ -126,7 +128,7 @@ for (i in c(1: nrow(SFB_proj))){
   templatenew = template
   templatenew =sub ("THISISTHETITLE", SFB_proj$Title[i],templatenew)
   ### this needs to be changed:
-  peoproj =people_sfb %>% filter(grepl (substring(SFB_proj$hash[i],9), project)) %>%
+  peoproj =people_sfb %>% filter(grepl (substring(SFB_proj$hash[i],9), Project)) %>%
     select(people_code)%>%
     pull()
 
@@ -168,6 +170,7 @@ for (i in c(1: nrow(update))){
 
   # create index
   templatenew = p_template
+  if (update$Name[i]== "") {templatenew = sub ("DISPLAYNAME",paste0(update$`Last name`[i], " ", update$`First name`[i]),templatenew)}
   templatenew =sub ("DISPLAYNAME", update$Name[i],templatenew)
   templatenew =sub ("USERNAME", update$people_code[i],templatenew)
   templatenew =sub ("HEREROLE", update$role[i],templatenew)
@@ -238,7 +241,7 @@ featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230
 
   ## getting people slide:
   # selecting people from that project, who have an author page:
-  goodone =lapply (people_sfb$project, function (x){ project %in% names(fread(text=paste0("\n ",x)))})
+  goodone =lapply (people_sfb$Project, function (x){ project %in% names(fread(text=paste0("\n ",x)))})
   selectedpeople =people_sfb[unlist(goodone),] %>% filter (people_code != "")
   # get and append all people images, + resiz
 
