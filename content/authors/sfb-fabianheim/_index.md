@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Fabian Heim
+name: Dr. Fabian Heim
 
 # Username (this should match the folder name)
 authors:
