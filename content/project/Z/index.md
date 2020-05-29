@@ -3,7 +3,7 @@
 
 title: "Z: data management and collaboration"
 summary: ""
-authors: ["matthew-larkum","julien-colomb"]
+authors: ["sfb-matthewlarkum","sfb-serenellabrinati","sfb-juliencolomb","sfb-marylouisegrossman","sfb-christophmetzner"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

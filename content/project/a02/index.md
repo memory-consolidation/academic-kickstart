@@ -3,7 +3,7 @@
 
 title: "A02: Differential embedding of hippocampal output neurons during memory-related oscillations"
 summary: ""
-authors: ["noam-nitzan","anton-dvorzhak","rosanna-sammons","dietmar-schmitz"]
+authors: ["sfb-dietmarschmitz","sfb-antondvorzhak","sfb-franziskascheibe","sfb-rosannasammons","sfb-annevoigt","sfb-noamnitzan"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

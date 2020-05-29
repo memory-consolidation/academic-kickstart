@@ -3,7 +3,7 @@
 
 title: "B06: Multiscale computations of memory consolidation: off-line replay and dopamine release during wakeful rest following encoding"
 summary: ""
-authors: ["Nai-feng-chen","Dorothea-haemmerer","paul-triebkorn","matthew-betts","eser-isler","emrah-duezel","petra-ritter"]
+authors: ["sfb-emrahduezel","sfb-petraritter","sfb-Dorotheahaemmerer","sfb-janpaultriebkorn","sfb-matthewbetts","sfb-Naifengchen","sfb-yialexyeojin"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

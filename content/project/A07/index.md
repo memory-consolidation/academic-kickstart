@@ -3,7 +3,7 @@
 
 title: "A07: How a specific memory is consolidated in the mushroom body output layer"
 summary: ""
-authors: ["desiree-laber","eric-reynolds","david-owald"]
+authors: ["sfb-davidowald","sfb-ericreynolds","sfb-desireelaber"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

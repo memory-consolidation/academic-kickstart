@@ -3,7 +3,7 @@
 
 title: "A06: Uncovering a role for inhibition in tutor-song memory consolidation in the zebra finch"
 summary: ""
-authors: ["fabian-heim","philipp-norton","susanne-seltmann","susanne-schreiber","daniela-vallentin"]
+authors: ["sfb-susanneschreiber","sfb-danielavallentin","sfb-fabianheim","sfb-philippnorton","sfb-susanneseltmann"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

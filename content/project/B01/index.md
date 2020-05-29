@@ -3,7 +3,7 @@
 
 title: "B01: A neuronal basis for systems memory consolidation"
 summary: ""
-authors: ["denis-alevi","naomi-auer","tiziano-d-albis","henning-sprekeler","richard-kempter"]
+authors: ["sfb-richardkempter","sfb-henningsprekeler","sfb-tizianodalbis","sfb-denisalevi","sfb-naomiauer"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

@@ -3,7 +3,7 @@
 
 title: "B04: Ontogenesis of memory consolidation"
 summary: ""
-authors: ["iryna-schommartz","Henriette-schuez","georgina-sket","de-chamorro","bernhard-weschke","claudia-buss","angela-kaindl","yee-lee-shing"]
+authors: ["sfb-claudiabuss","sfb-angelakaindl","sfb-yeeleeshing","sfb-dechamorro","sfb-bernhardweschke","sfb-irynaschommartz","sfb-Henrietteschuez","sfb-georginasket"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

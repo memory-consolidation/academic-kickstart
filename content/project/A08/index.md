@@ -3,7 +3,7 @@
 
 title: "A08: Convergent deficits of memory consolidation in aged and sleep-deprived Drosophila"
 summary: ""
-authors: ["torsten-goetz","yongtian-liang","sheng-huang","stephan-sigrist"]
+authors: ["sfb-stephansigrist","sfb-stephansigrist","sfb-yongtianliang","sfb-shenghuang","sfb-torstengoetz"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00
