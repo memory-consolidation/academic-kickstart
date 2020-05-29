@@ -28,9 +28,6 @@ social:
 - icon: globe 
   icon_pack: fas 
   link: https://itb.biologie.hu-berlin.de/~kempter/
-- icon: twitter 
-  icon_pack: fab 
-  link: https://twitter.com/denis_alevi
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -63,4 +60,4 @@ social:
 # - Visitors
 ---
 
-Computational Neuroscience PhD student @ Sprekeler Lab
+Former PhD student in projects A01
