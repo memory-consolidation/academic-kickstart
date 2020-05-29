@@ -68,9 +68,9 @@ seafilefolder= "/Users/colombj/Documents/Seafile/SFB1315info/"
 SFB_proj <- read_delim(paste0(seafilefolder,"sfb1315_project-people.csv"),
                        "\t", trim_ws = TRUE, skip = 1, na=character())
 
-people_sfb <- read_delim(paste0(seafilefolder,"sfb1315_people.csv"),
-                         "\t", trim_ws = TRUE, skip = 0, na=character())
-people_sfb$orcidnum=as.character(substring(people_sfb$orcid,19))
+people_sfb <- read_delim("automation_websiteelementscreation/SFBpeopel_current.csv",
+                         "\t", trim_ws = TRUE, skip = 0, na=c(""))
+#people_sfb$orcidnum=as.character(substring(people_sfb$orcid,19))
 
 ## used to create people code
 # people_sfb$people_code2 = NA
@@ -80,33 +80,36 @@ people_sfb$orcidnum=as.character(substring(people_sfb$orcid,19))
 # }
 # View(people_sfb)
 
-## pull orcid info
+# # Deprecated: done independently in create_peoplelist.R
+# ## pull orcid info
+#
+# # get orcid numbers automaticall via a search
+# orcidlist1= rorcid::orcid_search(grant_number = 327654276, rows =100)
+#
+# #Pool orcid and manual entries for orcid numbers:
+#
+# orcidnumberlist = unique(c(as.character(orcidlist1$orcid),as.list(people_sfb [people_sfb$orcidnum != "", ]%>% select (orcidnum))[[1]]))
+#
+# # Get information
+#
+# orcidlist1 = expandorcid(orcidnumberlist)
+#
+# # test all orcid names are in sfblist:
+# testingnames=right_join(people_sfb, orcidlist1, by = c("people_code"))
+# if(nrow(na.omit(testingnames[,2])) == nrow(testingnames[,2])) print ("all orcid entry in list") else View(testingnames)
+#
 
-# get orcid numbers automaticall via a search
-orcidlist1= rorcid::orcid_search(grant_number = 327654276, rows =100)
-
-#Pool orcid and manual entries for orcid numbers:
-
-orcidnumberlist = unique(c(as.character(orcidlist1$orcid),as.list(people_sfb [people_sfb$orcidnum != "", ]%>% select (orcidnum))[[1]]))
-
-# Get information
-
-orcidlist1 = expandorcid(orcidnumberlist)
-
-# test all orcid names are in sfblist:
-testingnames=right_join(people_sfb, orcidlist1, by = c("people_code"))
-if(nrow(na.omit(testingnames[,2])) == nrow(testingnames[,2])) print ("all orcid entry in list") else View(testingnames)
-
-people_sfb2 = left_join(people_sfb, orcidlist1, by = c("people_code"))
-
+orcidlist1 = expandorcid(people_sfb$orcidnum[!is.na (people_sfb$orcidnum)])
+people_sfb2 = left_join(people_sfb, orcidlist1, by = c("people_code_orcid" = "people_code"))
 # update info with orcid information as default.
 people_sfb = people_sfb2 %>%
-  mutate (orcid = ifelse (orcid.x == "", paste0("https://orcid.org/",orcid.y),orcid.x))%>%
+  mutate (orcid = paste0("https://orcid.org/",orcidnum))%>%
   mutate (github = ifelse (is.na(githublink_fo), github,githublink_fo)) %>%
   mutate (bio = ifelse (is.na(bio_fo), bio, bio_fo)) %>%
   mutate (twitter = ifelse (is.na(twitterlink_fo), twitter, twitterlink_fo)) %>%
   mutate (homepage = ifelse (is.na(lablink_fo), homepage, lablink_fo)) %>%
-  mutate (avatar = ifelse (is.na(picturelink_fo),avatar ,picturelink_fo))
+  mutate (avatar = ifelse (is.na(picturelink_fo),avatar ,picturelink_fo))%>%
+  mutate (people_code =people_code_orcid)
 
   View(people_sfb)
 
@@ -153,7 +156,8 @@ for (i in c(1: nrow(SFB_proj))){
 
 
 
-update = people_sfb %>% filter (people_code != "") #%>% filter(update == "yes")
+update = people_sfb #%>% filter (people_code != "") #%>% filter(update == "yes")
+update[is.na(update)] <- ""
 
 p_template =  readLines("automation_websiteelementscreation/authors_template.md")
 
@@ -166,7 +170,7 @@ for (i in c(1: nrow(update))){
   templatenew = p_template
   templatenew =sub ("DISPLAYNAME", update$Name[i],templatenew)
   templatenew =sub ("USERNAME", update$people_code[i],templatenew)
-  templatenew =sub ("HEREROLE", update$role_group[i],templatenew)
+  templatenew =sub ("HEREROLE", update$role[i],templatenew)
   templatenew =sub ("HERESHORTBIO", gsub("\"","'",update$bio [i]),templatenew)
 
   SOCIAL = paste0("\n- icon: globe \n  icon_pack: fas \n  link: ",update$homepage[i])
