@@ -40,8 +40,8 @@ expandorcid <- function(orcid_numberslist){
     url=b$`researcher-urls`$`researcher-url`$url.value
 
     # name
-    orcidlist$givenn_name [i]= b$name$`given-names`
-    orcidlist$family_name [i]=b$name$`family-name`
+    orcidlist$givenn_name [i]= nanull(b$name$`given-names`)
+    orcidlist$family_name [i]=nanull(b$name$`family-name`)
     ## add code without space and '
     orcidlist$people_code [i]=gsub("[^a-zA-Z0-9]", "-",tolower(paste0(b$name$`given-names`,"-",b$name$`family-name`)))
 
@@ -237,7 +237,7 @@ if (!is.na(update$bio_fo [i]))    HERETEXT = update$bio_fo [i] # bigraphy text i
 # function to create image from the main image given on seafile and avatars  given in website (can be set with createprojects.r)
 featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230,
                          border =3,
-                         widthfeature = 450) {
+                         widthfeature = 450, title =FALSE) {
 
   ## getting people slide:
   # selecting people from that project, who have an author page:
@@ -264,16 +264,23 @@ featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230
   Pwidth= image_info(imagep)$width
   ## get main image, box around it, and append with people slider
   imagemain = image_blank (widthfeature-Pwidth-2*border, heightfeature-2*border)
+  imagemain = image_read("static/img/icon-512.png") %>%
+    image_resize(paste0((widthfeature-Pwidth-2*border)/1.5,"x", (heightfeature-2*border)/1.5) ) %>%
+    image_extent (paste0(widthfeature-Pwidth-2*border,"x", heightfeature-2*border), gravity = "center", color = "white")%>%
+    image_border(geometry = paste0(border,"x",border))
+
   if (file.exists(paste0(seafilefolder,"projectsimages/", project,".png"))) {
     imagemain=
       paste0(seafilefolder,"projectsimages/", project,".png") %>%
       image_read() %>%
       image_resize(paste0(widthfeature-Pwidth-2*border,"x", heightfeature-2*border)) %>%
-      image_extent (paste0(widthfeature-Pwidth-2*border,"x", heightfeature-2*border), gravity = "Center")%>%
+      image_extent (paste0(widthfeature-Pwidth-2*border,"x", heightfeature-2*border), gravity = "south", color = "white")%>%
       image_border(geometry = paste0(border,"x",border))
   }
 
-
+  if (title) {imagemain= imagemain %>% image_convert( colorspace = 'RGB') %>%
+    image_annotate(project, gravity = "northeast", location ="+10+10",size = "40", boxcolor = "white")
+}
   Image = image_append(c(imagemain, imagep))
   return (Image)
 }
@@ -288,6 +295,13 @@ for (theproject in substring (SFB_proj$hash,9)) {
   theproject %>%
     featureimage(people_sfb,border = 2) %>%
     image_write(path = paste0("content/project/",theproject,"/featured.png"), format = "png")
+}
+
+for (theproject in substring (SFB_proj$hash,9)) {
+  print (theproject)
+  theproject %>%
+    featureimage(people_sfb,border = 2, title = TRUE) %>%
+    image_write(path = paste0("imageoutputtest/",theproject,"_featured.png"), format = "png")
 }
 #
 #
