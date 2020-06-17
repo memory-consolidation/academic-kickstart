@@ -9,9 +9,14 @@
   weight = 10
 
 [[main]]
-  name = "Result of the month"
+  name = "SFB1315 projects"
+  url = "#projects"
+  weight = 5
+
+[[main]]
+  name = "Research highlights"
   url = "#resultmonth"
-  weight = 10
+  weight = 15
 
 [[main]]
   name = "Our blog"
@@ -30,7 +35,7 @@
 
 [[main]]
   name = "Your feedback"
-  url = "https://github.com/smartfigures-dar/feedback_repo/issues/"
+  url = "https://github.com/smartfigures-dar/feedback_repo/issues/new/choose"
   weight = 50
 
 
