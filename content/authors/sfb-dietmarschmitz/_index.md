@@ -18,7 +18,11 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "PI in projects A01, A02"
+bio: "Full professor Cellular and Molecular Neurosciences
+Assistant professor
+Postdoctoral fellow 
+PhD thesis
+Studies in Medicine"
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -58,9 +62,12 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - Principal Investigator
 ---
 
-
+Full professor Cellular and Molecular Neurosciences
+Assistant professor
+Postdoctoral fellow 
+PhD thesis
+Studies in Medicine

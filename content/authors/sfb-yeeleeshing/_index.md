@@ -30,7 +30,7 @@ social:
   link: https://www.psychologie.uni-frankfurt.de/69824239/005_Prof_-Yee-Lee-Shing
 - icon: twitter 
   icon_pack: fab 
-  link: https://twitter.com/YeeLeeShing1
+  link: https://twitter.com/yeeleeshing1?lang=en
 - icon: orcid 
   icon_pack: ai 
   link: https://orcid.org/0000-0001-8922-7292
@@ -61,9 +61,8 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - Principal Investigator
 ---
 
 

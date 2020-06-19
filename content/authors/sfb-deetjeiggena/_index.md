@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "Post doc in project B05"
+bio: "I investigate spatial memory consolidation in humans using VR and real-life experimental settings. Previously, I examined the influence of lifestyle-interventions on hippocampal neurogenesis and spatial memory in young adult mice."
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -58,9 +58,8 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - postdoc
 ---
 
-
+I investigate spatial memory consolidation in humans using VR and real-life experimental settings. Previously, I examined the influence of lifestyle-interventions on hippocampal neurogenesis and spatial memory in young adult mice.

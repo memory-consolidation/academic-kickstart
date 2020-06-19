@@ -58,9 +58,8 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - Staff
 ---
 
 Mary Louise Grossman studierte Psychologie an der Carleton University (BA, Ottawa ON, Kanada 1985) und Landschaftsarchitektur (MLA, University of Guelph, ON Canada, 1990) sowie Ingenieurwesen (PhD, Tokyo University, 1995) und Wissenschaftsmarketing (MSc, TU Berlin, 2017). Als wissenschaftliche Mitarbeiterin (2006-2016) in der Organisation und Managementunterstützung der Abteilung Immunologie, Max-Planck-Institut für Infektionsbiologie (MPIIB) in Berlin, war Marylu Redaktionsassistentin des Bereichsleiters (Highly Cited Researcher Stefan HE Kaufmann) für abteilungsgeschriebene Publikationen. Dies, zusammen mit ihrem starken Hintergrund in Projektmanagement und Planung in Landschaftsarchitektur, könnte in einem wissenschaftlichen Kontext eingesetzt werden. Als Interimskoordinatorin (2016) des HU-basierten RTG1772/2 (Computational Systems Biology) und als Koordinatorin (2017) des IRTG2290 (Crossing Boundaries: Molecular Interactions in Malaria) unterstützte sie Doktoranden und ihre Principal Investigators bei der Erstellung entsprechender Trainingsprogramme gemäß den Grant-Bewilligungsunterlagen. Marylu ist derzeit Leiterin des  SFB1315/1 Koordinationsbüros ("Mechanisms and disturbances in memory consolidation: from synapses to systems", Sprecher Matthew Larkum) und Gesamtprojektkoordinatorin, der die Übereinstimmung der Aktivitäten mit den Bewilligungsunterlagen sicherstellt und sich somit auf die strategische Planung und Koordination der Anträge auf Erst- und Fortsetzungsanträge in der zweiten Phase an die DFG sowie auf die Mobilisierung strategischer Finanzen im Auftrag der Leitungsgremien des SFB konzentriert.

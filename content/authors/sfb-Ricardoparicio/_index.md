@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Ricardo Paricio
+name: Ricardo Paricio Montesinos
 
 # Username (this should match the folder name)
 authors:
@@ -28,6 +28,9 @@ social:
 - icon: globe 
   icon_pack: fas 
   link: https://www.jlab.berlin/
+- icon: orcid 
+  icon_pack: ai 
+  link: https://orcid.org/0000-0003-3325-9038
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -55,9 +58,8 @@ social:
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-# user_groups:
-# - Researchers
-# - Visitors
+user_groups:
+ - PhD student
 ---
 
-PhD student in project A05
+
