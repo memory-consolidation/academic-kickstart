@@ -138,7 +138,8 @@ for (i in c(1: nrow(SFB_proj))){
   print(paste0( '"',paste0(peoproj, collapse = '","'), '"'))
 
   templatenew =sub ("heretheautors", paste0( '"',paste0(peoproj, collapse = '","'), '"'),templatenew)
-  templatenew =sub ("IMAGECAPTION", SFB_proj$featured_image_caption[i],templatenew)
+  #templatenew =sub ("IMAGECAPTION", SFB_proj$featured_image_caption[i],templatenew)
+  templatenew =sub ("IMAGECAPTION", "",templatenew)
   #### erase second line when RG gets the right function (parametrised url)
   MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard?search=',SFB_proj$hash[i],'" height=1000px width=90% ></iframe>')
 
@@ -265,7 +266,7 @@ featureimage <- function(theproject,people_sfb = people_sfbh,   heightfeature = 
       image_crop ("100x100", gravity ="Center")%>%
       image_annotate(selectedpeople$Name, gravity = "south", size = "9", boxcolor = "light grey")%>%
       image_append( stack = TRUE) %>%
-      image_resize(paste0("77x", heightfeature)) %>%
+      image_page(paste0("77x", heightfeature)) %>%
       image_extent (paste0("77x", heightfeature), gravity = "North")
   }
 
@@ -295,23 +296,23 @@ featureimage <- function(theproject,people_sfb = people_sfbh,   heightfeature = 
 }
 
 # for testing
-# featureimage ("A04",people_sfb)
+# featureimage ("A04",people_sfb, heightfeature = 460,border =5,widthfeature = 900)
 
 
 ## create and save the file
 for (theproject in substring (SFB_proj$hash,9)) {
   #print (theproject)
   theproject %>%
-    featureimage(people_sfb,border = 2) %>%
+    featureimage(people_sfb, heightfeature = 460,border =5,widthfeature = 900) %>%
     image_write(path = paste0("content/project/",theproject,"/featured.png"), format = "png")
 }
 
-for (theproject in substring (SFB_proj$hash,9)) {
-  print (theproject)
-  theproject %>%
-    featureimage(people_sfb,border = 2, title = TRUE) %>%
-    image_write(path = paste0("imageoutputtest/",theproject,"_featured.png"), format = "png")
-}
+# for (theproject in substring (SFB_proj$hash,9)) {
+#   print (theproject)
+#   theproject %>%
+#     featureimage(people_sfb,border = 2, title = TRUE) %>%
+#     image_write(path = paste0("imageoutputtest/",theproject,"_featured.png"), format = "png")
+# }
 #
 #
 #
