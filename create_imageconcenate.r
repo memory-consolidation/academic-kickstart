@@ -40,6 +40,10 @@ bgf
 ##new image try
 
 im_bg = image_read(c("static/img/bckwebsite/fly.jpg","static/img/bckwebsite/mouse.jpg","static/img/bckwebsite/human.png"))
+## with non-accepted cell cover image a04:
+#im_bg = image_read(c("static/img/bckwebsite/Cell_cover_small.png","static/img/bckwebsite/Cell_cover_small.png", "static/img/bckwebsite/fly.jpg","static/img/bckwebsite/mouse.jpg","static/img/bckwebsite/human.png"))
+
+
 im_bg2=image_resize(im_bg, "X600")
 #im_bg3=image_crop(im_bg2, geometry = "1200x600", gravity = "Center", repage = TRUE)
 im_bg3=image_extent(im_bg2, geometry = "1200x600", gravity = "Center", color = "black")
