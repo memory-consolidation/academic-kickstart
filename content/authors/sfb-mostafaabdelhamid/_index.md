@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Abdelhamid Mostafa
+name: Mostafa Abdelhamid
 
 # Username (this should match the folder name)
 authors:

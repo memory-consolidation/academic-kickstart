@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Van Kronenberg Philipp
+name: Philipp Van Kronenberg
 
 # Username (this should match the folder name)
 authors:

@@ -1,6 +1,6 @@
 ---
 # Display name
-name: (Alex) Yeo Jin Yi
+name: Yi (Alex) Yeo Jin
 
 # Username (this should match the folder name)
 authors:

@@ -110,7 +110,10 @@ people_sfb = people_sfb2 %>%
   mutate (homepage = ifelse (is.na(lablink_fo), homepage, lablink_fo)) %>%
   mutate (avatar = ifelse (is.na(picturelink_fo),avatar ,picturelink_fo))%>%
   mutate (people_code = ifelse (!is.na(people_code_orcid), people_code_orcid,peoplecode))%>%
-  mutate (people_code = paste0("sfb-",gsub("[^a-zA-Z0-9]", "",people_code)))
+  mutate (people_code = paste0("sfb-",gsub("[^a-zA-Z0-9]", "",people_code)))%>%
+  mutate (role2 = ifelse (role %in% c("Team Assistant","Data Curator","Network Coord\n","Coordinator"), "Staff", role) )  %>%
+  mutate (Name =ifelse (is.na(Name),paste0(`First name`," ",`Last name`), Name))
+
 
 
   View(people_sfb)
@@ -174,6 +177,7 @@ for (i in c(1: nrow(update))){
   templatenew =sub ("DISPLAYNAME", update$Name[i],templatenew)
   templatenew =sub ("USERNAME", update$people_code[i],templatenew)
   templatenew =sub ("HEREROLE", update$role[i],templatenew)
+  templatenew =sub ("HEREROL2", update$role2[i],templatenew)
   templatenew =sub ("HERESHORTBIO", gsub("\"","'",update$bio [i]),templatenew)
 
   SOCIAL = paste0("\n- icon: globe \n  icon_pack: fas \n  link: ",update$homepage[i])
@@ -209,7 +213,10 @@ if (!is.na(update$bio_fo [i]))    HERETEXT = update$bio_fo [i] # bigraphy text i
 
   ## add avatar picture
   if (update$avatar[i] != "" & update$avatar[i] != "done"){
-  download.file(update$avatar[i],paste0(pdirectory,"/avatar.jpg"), mode ="wb")
+    tryCatch(download.file(update$avatar[i],paste0(pdirectory,"/avatar.jpg"), mode ="wb", quiet = FALSE),
+             error = function(e) print(paste('avatar not downloaded ')))
+
+
   }
 
   templatenew =sub ("HERESOCIAL", SOCIAL,templatenew)
@@ -235,14 +242,16 @@ if (!is.na(update$bio_fo [i]))    HERETEXT = update$bio_fo [i] # bigraphy text i
 
 
 # function to create image from the main image given on seafile and avatars  given in website (can be set with createprojects.r)
-featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230,
+featureimage <- function(theproject,people_sfb = people_sfbh,   heightfeature = 230,
                          border =3,
                          widthfeature = 450, title =FALSE) {
 
   ## getting people slide:
   # selecting people from that project, who have an author page:
-  goodone =lapply (people_sfb$Project, function (x){ project %in% names(fread(text=paste0("\n ",x)))})
-  selectedpeople =people_sfb[unlist(goodone),] %>% filter (people_code != "")
+
+  #goodone =lapply (people_sfb$Project, function (x){ theproject %in% names(fread(text=paste0("\n ",x)))})
+  #selectedpeople =people_sfb[unlist(goodone),] %>% filter (people_code != "")
+  selectedpeople =people_sfb %>% filter(grepl (pattern=theproject, Project))
   # get and append all people images, + resiz
 
   imagep = image_blank (77,heightfeature)
@@ -269,9 +278,9 @@ featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230
     image_extent (paste0(widthfeature-Pwidth-2*border,"x", heightfeature-2*border), gravity = "center", color = "white")%>%
     image_border(geometry = paste0(border,"x",border))
 
-  if (file.exists(paste0(seafilefolder,"projectsimages/", project,".png"))) {
+  if (file.exists(paste0(seafilefolder,"projectsimages/", theproject,".png"))) {
     imagemain=
-      paste0(seafilefolder,"projectsimages/", project,".png") %>%
+      paste0(seafilefolder,"projectsimages/", theproject,".png") %>%
       image_read() %>%
       image_resize(paste0(widthfeature-Pwidth-2*border,"x", heightfeature-2*border)) %>%
       image_extent (paste0(widthfeature-Pwidth-2*border,"x", heightfeature-2*border), gravity = "south", color = "white")%>%
@@ -279,14 +288,14 @@ featureimage <- function(project,people_sfb = people_sfbh,   heightfeature = 230
   }
 
   if (title) {imagemain= imagemain %>% image_convert( colorspace = 'RGB') %>%
-    image_annotate(project, gravity = "northeast", location ="+10+10",size = "40", boxcolor = "white")
+    image_annotate(theproject, gravity = "northeast", location ="+10+10",size = "40", boxcolor = "white")
 }
   Image = image_append(c(imagemain, imagep))
   return (Image)
 }
 
 # for testing
-# featureimage ("A04")
+# featureimage ("A04",people_sfb)
 
 
 ## create and save the file

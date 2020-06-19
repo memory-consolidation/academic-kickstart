@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Metzner Christoph
+name: Christoph Metzner
 
 # Username (this should match the folder name)
 authors:
