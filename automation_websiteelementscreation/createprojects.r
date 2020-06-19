@@ -99,7 +99,7 @@ people_sfb <- read_delim("automation_websiteelementscreation/SFBpeopel_current.c
 # if(nrow(na.omit(testingnames[,2])) == nrow(testingnames[,2])) print ("all orcid entry in list") else View(testingnames)
 #
 
-orcidlist1 = expandorcid(people_sfb$orcidnum[!is.na (people_sfb$orcidnum)])
+orcidlist1 = expandorcid(unique(people_sfb$orcidnum[!is.na (people_sfb$orcidnum)]))
 people_sfb2 = left_join(people_sfb, orcidlist1, by = c("people_code_orcid" = "people_code"))
 # update info with orcid information as default.
 people_sfb = people_sfb2 %>%
@@ -266,7 +266,7 @@ featureimage <- function(theproject,people_sfb = people_sfbh,   heightfeature = 
       image_crop ("100x100", gravity ="Center")%>%
       image_annotate(selectedpeople$Name, gravity = "south", size = "9", boxcolor = "light grey")%>%
       image_append( stack = TRUE) %>%
-      image_page(paste0("77x", heightfeature)) %>%
+      image_resize(paste0("77x", heightfeature)) %>%
       image_extent (paste0("77x", heightfeature), gravity = "North")
   }
 

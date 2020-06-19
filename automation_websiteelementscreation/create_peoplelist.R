@@ -59,7 +59,7 @@ SFBlist_old <- read_delim("automation_websiteelementscreation/sfb1315_peopleinfo
 if (!all (orcidlist1$orcid %in% SFBlist_old$orcidnum)) {
   a=left_join (SFBlist_old, orcidlist1, by= c("people_code_orcid" = "peoplecode"))
   a$orcidnum [a$orcidnum ==""] = NA
-  a$orcidnum = ifelse (is.na(a$orcidnum),a$orcid.y, a$orcidnum)
+  a$orcidnum = ifelse (is.na(a$orcidnum),a$orcid, a$orcidnum)
   SFBlist_new = a [1:(length(a)-length(orcidlist1)+1)]
 }else {SFBlist_new = SFBlist_old}
 
@@ -74,4 +74,4 @@ SFBpeopel_current = left_join (allpeople,SFBlist_new, by =c("peoplecode" = "peop
 write.table (SFBpeopel_current, file = "automation_websiteelementscreation/SFBpeopel_current.csv", sep = "\t", na = "",row.names = FALSE)
 write.table (SFBlist_new, file = "automation_websiteelementscreation/sfb1315_peopleinfo2.csv", sep = "\t", row.names = FALSE)
 
-SFBpeopel_current$peoplecode
+#SFBpeopel_current$peoplecode

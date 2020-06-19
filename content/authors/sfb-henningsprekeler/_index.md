@@ -33,7 +33,7 @@ social:
   link: https://twitter.com/sprekeler
 - icon: orcid 
   icon_pack: ai 
-  link: https://orcid.org/0000-0002-1698-5815
+  link: https://orcid.org/0000-0003-0690-3553
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".

@@ -1,10 +1,10 @@
 ---
 # Display name
-name: Liliia Schevchuk
+name: Liliia Shevchuk
 
 # Username (this should match the folder name)
 authors:
-- sfb-liliiaschevchuk
+- sfb-liliiashevchuk
 
 # Is this the primary user of the site?
 superuser: false
@@ -28,6 +28,9 @@ social:
 - icon: globe 
   icon_pack: fas 
   link: https://www2.medizin.uni-greifswald.de/neurolog/klinik/mitarbeiter/prof-dr-agnes-floeel/
+- icon: orcid 
+  icon_pack: ai 
+  link: https://orcid.org/0000-0003-1423-0918
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -59,4 +62,4 @@ user_groups:
  - Associated PhD student
 ---
 
-PhD student in project B03
+
