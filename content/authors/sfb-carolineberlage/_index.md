@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Associated PhD student
+role: Alumni
 
 # Organizations/Affiliations
 organizations:
@@ -56,7 +56,7 @@ social:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
- - Associated PhD student
+ - Alumni
 ---
 
 

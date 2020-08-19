@@ -1,10 +1,10 @@
 ---
 # Display name
-name: Ricardo Paricio-Montesinos
+name: David Toppe
 
 # Username (this should match the folder name)
 authors:
-- sfb-Ricardoparicio
+- sfb-davidtoppe
 
 # Is this the primary user of the site?
 superuser: false
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "PhD student in project A05"
+bio: ""
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,10 +27,7 @@ bio: "PhD student in project A05"
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://www.jlab.berlin/
-- icon: orcid 
-  icon_pack: ai 
-  link: https://orcid.org/0000-0003-3325-9038
+  link: 
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".

@@ -3,7 +3,7 @@
 
 title: "C01: Development of molecular tools for manipulating and studying memory engrams"
 summary: ""
-authors: ["sfb-peterhegemann","sfb-christianrosenmund","sfb-dietmarschmitz","sfb-matthiasbroser","sfb-anishadayaram","sfb-stellaamreikunde","sfb-Yinthandreabernal","sfb-beatrizrebollogonzalez","sfb-thorstentrimbuch","sfb-marcialcamachoperez","sfb-clairecooper","sfb-foteiniparaskevopulou"]
+authors: ["sfb-peterhegemann","sfb-christianrosenmund","sfb-dietmarschmitz","sfb-matthiasbroser","sfb-anishadayaram","sfb-Yinthandreabernal","sfb-beatrizrebollogonzalez","sfb-thorstentrimbuch","sfb-marcialcamachoperez","sfb-stellaamreikunde","sfb-clairecooper","sfb-foteiniparaskevopulou"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

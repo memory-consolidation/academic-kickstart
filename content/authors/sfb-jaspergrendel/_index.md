@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Ricardo Paricio-Montesinos
+name: Jasper Grendel
 
 # Username (this should match the folder name)
 authors:
-- sfb-Ricardoparicio
+- sfb-jaspergrendel
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: PhD student
+role: Associated postdoc
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "PhD student in project A05"
+bio: ""
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,10 +27,7 @@ bio: "PhD student in project A05"
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://www.jlab.berlin/
-- icon: orcid 
-  icon_pack: ai 
-  link: https://orcid.org/0000-0003-3325-9038
+  link: 
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -59,7 +56,7 @@ social:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
- - PhD student
+ - Associated postdoc
 ---
 
 

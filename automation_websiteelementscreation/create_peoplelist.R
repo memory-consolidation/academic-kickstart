@@ -2,16 +2,19 @@ library (readxl)
 library (dplyr)
 library(readr)
 
+## download spreadsheet at: https://docs.google.com/spreadsheets/d/1ZRLAgKTZsi62fbSCweGJBoi7cE5RhkNm9aRFg3yFrD8/edit?usp=drive_web&ouid=114659130255583378070
+
+
 #read spreadsheets
 PI <- read_excel("~/Downloads/SFB personnel.xlsx",
-                 sheet = 1, skip = 2)[,1:7]
+                 sheet = 1, skip = 3)[,1:7]
 headershere = names(PI)
 
 postdoc <- read_excel("~/Downloads/SFB personnel.xlsx",
-                 sheet = 2, skip = 2)[,1:7]
+                 sheet = 2, skip = 3)[,1:7]
 
 phd<- read_excel("~/Downloads/SFB personnel.xlsx",
-                 sheet = 3, skip = 2)[,1:7]
+                 sheet = 3, skip = 3)[,1:7]
 
 staff<- read_excel("~/Downloads/SFB personnel.xlsx",
                  sheet = 4, skip = 3)[,c(1:3,5:8)]
