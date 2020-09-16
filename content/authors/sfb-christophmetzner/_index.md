@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Network Coord
+role: Network Coordinator
 
 # Organizations/Affiliations
 organizations:
@@ -56,7 +56,7 @@ social:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
- - Network Coord
+ - Network Coordinator
 ---
 
 

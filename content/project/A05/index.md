@@ -3,7 +3,7 @@
 
 title: "A05: Target-specific synaptic and network mechanisms of memory consolidation"
 summary: ""
-authors: ["sfb-benjaminjudkewitz","sfb-jamespoulet","sfb-svenjasteinfelder","sfb-annapooraniudhayachandran","sfb-mikkelvestergaard","sfb-clarissawhitmire","sfb-Ricardoparicio","sfb-ianerikstewart","sfb-carolineberlage"]
+authors: ["sfb-benjaminjudkewitz","sfb-jamespoulet","sfb-svenjasteinfelder","sfb-annapooraniudhayachandran","sfb-mikkelvestergaard","sfb-clarissawhitmire","sfb-tobiasleva","sfb-Ricardoparicio","sfb-ianerikstewart","sfb-carolineberlage"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00

@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Ian Erik Meredyth Stewart
+name: Tobias Leva
 
 # Username (this should match the folder name)
 authors:
-- sfb-ianerikstewart
+- sfb-tobiasleva
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Associated PhD student
+role: PhD student
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "PhD student in project A05"
+bio: ""
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,10 +27,7 @@ bio: "PhD student in project A05"
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://www.mdc-berlin.de/poulet
-- icon: orcid 
-  icon_pack: ai 
-  link: https://orcid.org/0000-0001-5307-1564
+  link: 
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -59,7 +56,7 @@ social:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
- - Associated PhD student
+ - PhD student
 ---
 
 
