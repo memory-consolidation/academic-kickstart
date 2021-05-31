@@ -3,7 +3,7 @@
 
 title: "A08: Convergent deficits of memory consolidation in aged and sleep-deprived Drosophila"
 summary: ""
-authors: ["sfb-stephansigrist","sfb-yongtianliang","sfb-davidtoppe","sfb-shenghuang","sfb-torstengoetz"]
+authors: ["sfb-stephansigrist","sfb-orianaturrel","sfb-shenghuang","sfb-yongtianliang","sfb-davidtoppe","sfb-torstengoetz"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00
@@ -49,5 +49,5 @@ SFB1315 member can access the latest unpublished results for this project on the
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:A08" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/?search=project:A08" height=1000px width=90% ></iframe>
 </center>

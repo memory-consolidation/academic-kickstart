@@ -53,5 +53,5 @@ SFB1315 member can access the latest unpublished results for this project on the
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:C01" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/?search=project:C01" height=1000px width=90% ></iframe>
 </center>

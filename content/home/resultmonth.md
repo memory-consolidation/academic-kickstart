@@ -8,8 +8,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
-title = "Research highlights"
-subtitle = "A04 group: Mototaka & Larkum, 2020, published in cell"
+title = "Opemn Research tools created for the CRC"
+subtitle = "Optogenetic tools and data management tools"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -48,7 +48,7 @@ subtitle = "A04 group: Mototaka & Larkum, 2020, published in cell"
 +++
 
 
-<iframe src ="https://sdash.sourcedata.io/panel/209?token=ICAKTDpws4dSnrNsAbNz4hjFajAMHzkkrXx9l7xPfGfvdq89" height=1000px width=100% ></iframe>
+<iframe src ="https://www2.hu-berlin.de/sfb1315-sdash/?askfor=tools" height=1000px width=100% ></iframe>
 
 
 

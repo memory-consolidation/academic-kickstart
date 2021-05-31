@@ -3,7 +3,7 @@
 
 title: "A05: Target-specific synaptic and network mechanisms of memory consolidation"
 summary: ""
-authors: ["sfb-benjaminjudkewitz","sfb-jamespoulet","sfb-svenjasteinfelder","sfb-annapooraniudhayachandran","sfb-mikkelvestergaard","sfb-clarissawhitmire","sfb-tobiasleva","sfb-Ricardoparicio","sfb-ianerikstewart","sfb-carolineberlage"]
+authors: ["sfb-benjaminjudkewitz","sfb-jamespoulet","sfb-annapooraniudhayachandran","sfb-mikkelvestergaard","sfb-clarissawhitmire","sfb-svenjasteinfelder","sfb-tobiasleva","sfb-Ricardoparicio","sfb-carolineberlage","sfb-ianerikstewart"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00
@@ -49,5 +49,5 @@ SFB1315 member can access the latest unpublished results for this project on the
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:A05" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/?search=project:A05" height=1000px width=90% ></iframe>
 </center>

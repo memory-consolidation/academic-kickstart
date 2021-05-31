@@ -1,5 +1,6 @@
 # serve website:
-if (blogdown::hugo_version() != "0.58.3") blogdown::install_hugo(version ="0.58.3", force =TRUE, use_brew = FALSE)
+if (blogdown::hugo_version() != "0.58.3") blogdown::install_hugo(version ="0.58.3", force =TRUE)
+options(blogdown.hugo.version = "0.58.3")
 blogdown::serve_site()
 
 ###--------
@@ -141,7 +142,7 @@ for (i in c(1: nrow(SFB_proj))){
   #templatenew =sub ("IMAGECAPTION", SFB_proj$featured_image_caption[i],templatenew)
   templatenew =sub ("IMAGECAPTION", "",templatenew)
   #### erase second line when RG gets the right function (parametrised url)
-  MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard?search=',SFB_proj$hash[i],'" height=1000px width=90% ></iframe>')
+  MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/?search=',SFB_proj$hash[i],'" height=1000px width=90% ></iframe>')
 
   #MAINTEXT2 = paste0('<iframe src ="https://sdash.sourcedata.io/dashboard" height=1000px width=90% ></iframe>')
   templatenew =sub ("maintexthere", SFB_proj$description [i],templatenew )

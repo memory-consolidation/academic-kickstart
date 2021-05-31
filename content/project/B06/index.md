@@ -3,7 +3,7 @@
 
 title: "B06: Multiscale computations of memory consolidation: off-line replay and dopamine release during wakeful rest following encoding"
 summary: ""
-authors: ["sfb-emrahduezel","sfb-petraritter","sfb-Dorotheahaemmerer","sfb-janpaultriebkorn","sfb-matthewbetts","sfb-Naifengchen","sfb-yialexyeojin"]
+authors: ["sfb-emrahduezel","sfb-petraritter","sfb-konstantinblau","sfb-Dorotheahaemmerer","sfb-matthewbetts","sfb-janpaultriebkorn","sfb-yialexyeojin","sfb-Naifengchen"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00
@@ -49,5 +49,5 @@ SFB1315 member can access the latest unpublished results for this project on the
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:B06" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/?search=project:B06" height=1000px width=90% ></iframe>
 </center>

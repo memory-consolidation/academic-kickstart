@@ -3,7 +3,7 @@
 
 title: "A04: Memory formation and consolidation in defined neurons of the cortex"
 summary: ""
-authors: ["sfb-matthewlarkum","sfb-marinamikhaylova","sfb-mostafaabdelhamid","sfb-naoyatakahashi","sfb-jiyunshin"]
+authors: ["sfb-matthewlarkum","sfb-marinamikhaylova","sfb-mostafaabdelhamid","sfb-guydoron","sfb-naoyatakahashi","sfb-jiyunshin"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00
@@ -51,5 +51,5 @@ SFB1315 member can access the latest unpublished results for this project on the
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:A04" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/?search=project:A04" height=1000px width=90% ></iframe>
 </center>

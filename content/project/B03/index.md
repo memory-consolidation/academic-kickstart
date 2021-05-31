@@ -3,7 +3,7 @@
 
 title: "B03: Modulation of memory consolidation in humans"
 summary: ""
-authors: ["sfb-Agnesflel","sfb-klausobermayer","sfb-nikolajajcay","sfb-julialadenbauer","sfb-michaelscholz","sfb-caglarcakan","sfb-robertmalinowski","sfb-cristianadimulescu","sfb-danielaobst","sfb-liliiashevchuk","sfb-nicolasroth"]
+authors: ["sfb-Agnesflel","sfb-klausobermayer","sfb-nikolajajcay","sfb-julialadenbauer","sfb-michaelscholz","sfb-caglarcakan","sfb-robertmalinowski","sfb-cristianadimulescu","sfb-danielaobst","sfb-liliiashevchukkhakimova","sfb-nicolasroth"]
 tags: []
 categories: []
 date: 2019-12-16T10:31:52+01:00
@@ -51,5 +51,5 @@ SFB1315 member can access the latest unpublished results for this project on the
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:B03" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/?search=project:B03" height=1000px width=90% ></iframe>
 </center>

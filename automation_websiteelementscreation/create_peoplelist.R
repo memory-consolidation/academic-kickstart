@@ -78,3 +78,4 @@ write.table (SFBpeopel_current, file = "automation_websiteelementscreation/SFBpe
 write.table (SFBlist_new, file = "automation_websiteelementscreation/sfb1315_peopleinfo2.csv", sep = "\t", row.names = FALSE)
 
 #SFBpeopel_current$peoplecode
+

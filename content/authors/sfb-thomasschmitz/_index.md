@@ -1,16 +1,16 @@
 ---
 # Display name
-name: Jiyun Shin
+name: Thomas Schmitz
 
 # Username (this should match the folder name)
 authors:
-- sfb-jiyunshin
+- sfb-thomasschmitz
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Alumni
+role: Associated Principal Investigator
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: "PhD student in project A04"
+bio: ""
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -27,10 +27,7 @@ bio: "PhD student in project A04"
 social:
 - icon: globe 
   icon_pack: fas 
-  link: https://www.projekte.hu-berlin.de/en/larkum/
-- icon: twitter 
-  icon_pack: fab 
-  link: https://twitter.com/jshin92
+  link: 
 # - icon: envelope
 #   icon_pack: fas
 #   link: '#contact'  # For a direct email link, use "mailto:julien.colomb@fu-berlin.de".
@@ -59,9 +56,7 @@ social:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
- - Alumni
+ - Associated Principal Investigator
 ---
 
-Postdoc @nyulangone, First generation PhD.
-Cortical layers/Dendrites/Sleep/Memory consolidation/human intracranial recording.
-Classical music lover.
+

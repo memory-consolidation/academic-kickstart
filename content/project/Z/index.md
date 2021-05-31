@@ -49,5 +49,5 @@ SFB1315 member can access the latest unpublished results for this project on the
 </DIV>
 
 <center>
-<iframe src ="https://sdash.sourcedata.io/dashboard?search=project:Z" height=1000px width=90% ></iframe>
+<iframe src ="https://sdash.sourcedata.io/?search=project:Z" height=1000px width=90% ></iframe>
 </center>

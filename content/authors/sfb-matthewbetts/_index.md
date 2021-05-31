@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Associated postdoc
+role: Alumni
 
 # Organizations/Affiliations
 organizations:
@@ -59,7 +59,7 @@ social:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
- - Associated postdoc
+ - Alumni
 ---
 
-Neuroscientist | Pharmacologist | Neuroimaging | Ageing | Alzheimer's & Parkinson's disease | Locus Coeruleus | Digital Health | Sport | Coffee
+Pharmacologist | Neuroscientist | Neuroimaging | Ageing | Alzheimer's & Parkinson's disease | Locus Coeruleus | 🇬🇧 🇩🇪
